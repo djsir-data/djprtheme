@@ -1,0 +1,29 @@
+Package: djprtheme
+Title: Create Graphs in the DJPR Style 
+Version: 0.0.0.9000
+Authors@R: 
+    c(
+    person(given = "Darren",
+           family = "Wong",
+           role = "aut",
+           email = "darren.wong@ecodev.vic.gov.au"),
+    person(given = "Nicholas",
+           family = "Casey",
+           role = "aut",
+           email = "nicholas.casey@ecodev.vic.gov.au"),
+    person(given = "Matt",
+           family = "Cowgill",
+           role = c("aut", "cre"),
+           email = "matt.cowgill@ecodev.vic.gov.au",
+           comment = c(ORCID = "0000-0003-0422-3300")),
+    person(given = "Department of Jobs, Precincts and Regions (Victoria)",
+             role = c("cph", "fnd"))
+           )
+Description: Enables the user to create ggplot2 charts that conform 
+    to the style guide of the Department of Jobs, Precincts and Regions 
+    (Victoria).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
