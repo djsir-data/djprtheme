@@ -15,6 +15,7 @@ jobs:
     runs-on: macOS-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
     steps:
       - uses: actions/checkout@v2
 
@@ -44,5 +45,5 @@ jobs:
         shell: Rscript {0}
 
       - name: Test coverage
-        run: covr::codecov(token = '6015b780-f1f6-4243-a11e-42fdc5c37122')
+        run: covr::codecov()
         shell: Rscript {0}
