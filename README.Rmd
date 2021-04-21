@@ -9,7 +9,8 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%"
+  out.width = "100%",
+  fig.retina = 2
 )
 ```
 
@@ -31,7 +32,44 @@ Jobs, Precincts and Regions.
 
 You can install `djprtheme` from [GitHub](https://github.com/) with:
 
-``` r
+``` {r eval = FALSE}
 # install.packages("devtools")
 devtools::install_github("djpr-data/djprtheme")
 ```
+
+## Colours
+
+This is the DJPR palette, in alphabetical order:
+
+```{r colours, echo=FALSE}
+library(djprtheme)
+library(ggplot2)
+# This is a hacky way to get the vector of colours
+obj <- ls("package:djprtheme")
+# This is brittle - will fall over if some non-col object
+# has the name `djpr_something`
+obj <- obj[grepl("^djpr_", obj)]
+
+cols <- lapply(obj, function(x) eval(parse(text = x))) 
+cols <- as.character(cols)
+cols <- setNames(cols, obj)
+
+df <- data.frame(col = cols,
+                 name = obj)
+
+ggplot(df,
+                aes(x = factor(name, 
+                               levels = rev(name)),
+                    y = 1,
+                    fill = name)) +
+  geom_tile() +
+  geom_text(aes(label = col),
+            col = "white") +
+  coord_flip() +
+  scale_fill_manual(values = cols) +
+  theme_void() +
+  theme(axis.text.y = element_text(hjust = 1),
+        legend.position = "none")
+
+```
+

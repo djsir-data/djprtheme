@@ -24,3 +24,9 @@ You can install `djprtheme` from [GitHub](https://github.com/) with:
 # install.packages("devtools")
 devtools::install_github("djpr-data/djprtheme")
 ```
+
+## Colours
+
+This is the DJPR palette, in alphabetical order:
+
+<img src="man/figures/README-colours-1.png" width="100%" />
