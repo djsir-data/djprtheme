@@ -63,16 +63,6 @@ djpr_pal <- function(n = 0, reverse = FALSE, faded = FALSE) {
   }
 
 
-  if (isTRUE(faded)) {
-    palette <- faded_palette(n)
-  }
-
-
-  if (isTRUE(reverse)) {
-    palette <- rev(palette)
-  }
-
-
   palette
 }
 
@@ -135,7 +125,7 @@ regular_palette <- function(n) {
                  djprtheme::djpr_green,
                  djprtheme::djpr_spray,
                  djprtheme::djpr_cool_grey_1,
-                 djprtheme::djpr_cool_grey_4,
+                 djprtheme::djpr_golden_yellow,
                  djprtheme::djpr_cool_grey_11)
   } else if (n == 10) {
     palette <- c(djprtheme::djpr_pacific_blue,
@@ -146,7 +136,7 @@ regular_palette <- function(n) {
                  djprtheme::djpr_persian_green,
                  djprtheme::djpr_spray,
                  djprtheme::djpr_cool_grey_1,
-                 djprtheme::djpr_cool_grey_4,
+                 djprtheme::djpr_golden_yellow,
                  djprtheme::djpr_cool_grey_11)
   }
   palette
