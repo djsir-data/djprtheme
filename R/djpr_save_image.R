@@ -4,6 +4,6 @@
 #' The function should remove title and subtitle by default, as these
 #' should be added on the slide itself rather than included in the image.
 
-djpr_save_image <- function(filename, objectname, size) {
+djpr_save_image <- function(filename, objectname, size = ) {
 
 }
