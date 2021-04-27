@@ -13,22 +13,20 @@ djpr_save_image <- function(filename, plot = last_plot(), size = "full", dpi = "
 
 # define sizes
 if (size == "full") {
-  width == "20"
-  height == "20"}
-
-if (size == "threequarter") {
-    width == "15"
-    height == "15"}
-
-if (size == "half") {
-    width == "10"
-    height == "10"}
-
-if (size == "quarter") {
-    width == "5"
-    height == "5"}
-
-else {print("Error: Parameter size not properly defined. Options are 'full, 'threequarter', 'half' and 'quarter'")}
+  width <- 20
+  height <- 20
+  } else if (size == "threequarter") {
+    width <- 15
+    height <- 15
+  } else if (size == "half") {
+    width <- 10
+    height <- 10
+  } else if (size == "quarter") {
+    width <- 5
+    height <- 5
+  } else {
+    stop("Error: Parameter size not properly defined. Options are 'full', 'threequarter', 'half' and 'quarter'")
+  }
 
 # ggsave function
 ggsave(filename=filename, plot = plot, width = width, height = height, units = "cm", dpi=dpi)
