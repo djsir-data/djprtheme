@@ -13,17 +13,17 @@ djpr_save_image <- function(filename, plot = last_plot(), size = "full", dpi = "
 
 # define sizes
 if (size == "full") {
-  width <- 20
-  height <- 20
+  width <- 27
+  height <- 14.36
   } else if (size == "threequarter") {
-    width <- 15
-    height <- 15
+    width <- 20.25
+    height <- 10.77
   } else if (size == "half") {
-    width <- 10
-    height <- 10
+    width <- 13.5
+    height <- 7.18
   } else if (size == "quarter") {
-    width <- 5
-    height <- 5
+    width <- 6.75
+    height <- 3.59
   } else {
     stop("Error: Parameter size not properly defined. Options are 'full', 'threequarter', 'half' and 'quarter'")
   }
