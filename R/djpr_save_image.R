@@ -15,7 +15,8 @@
 djpr_save_image <- function(filename, plot = last_plot(), size = "full", dpi = "retina") {
 
 # remove title and subtitle
-plot <- last_plot(x = x, y = y, main = NULL, sub = NULL)
+plot <- last_plot(x = x, y = y, main = NULL, sub = NULL)   # works for plot()
+plot <- theme(main.title = element_blank())
 
 # define sizes
 if (size == "full") {
