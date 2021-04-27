@@ -29,9 +29,20 @@
 #' p <- ggplot(mtcars, aes(x = wt, y = mpg, col = factor(cyl))) +
 #'     geom_point() +
 #'     theme_djpr() +
-#'     djpr_colour_manual(n = 3)
+#'     djpr_colour_manual(3)
 #'
 #' p
+#'
+#'
+#' # When applying colours as a fill, use djpr_fill_manual, which is
+#' # a wrapper around scale_colour_manual:
+#'
+#' p <- ggplot(mtcars, aes(x = mpg, fill = factor(cyl))) +
+#'   geom_histogram() +
+#'     theme_djpr() +
+#'     djpr_fill_manual(3)
+#' p
+#'
 #'
 #' @export
 
@@ -140,6 +151,14 @@ regular_palette <- function(n) {
                  djprtheme::djpr_cool_grey_11)
   }
   palette
+}
+
+djpr_colour_manual <- function(x){
+  scale_colour_manual(values=djpr_pal(n=x))
+}
+
+djpr_fill_manual <- function(x){
+  scale_fill_manual(values=djpr_pal(n=x))
 }
 
 
