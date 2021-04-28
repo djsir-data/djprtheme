@@ -2,7 +2,7 @@
 % Please edit documentation in R/djpr_pal.R
 \name{djpr_pal}
 \alias{djpr_pal}
-\title{Create a Djpr-appropriate palette for your chart.}
+\title{Create a DJPR-appropriate palette for your ggplot2 chart}
 \usage{
 djpr_pal(n = 0, reverse = FALSE, faded = FALSE)
 }
@@ -10,10 +10,7 @@ djpr_pal(n = 0, reverse = FALSE, faded = FALSE)
 \item{n}{Numeric. The number of levels in your colour scale. Minimum value is
 1, maximum is 10. Using more than 6 is not recommended. If you don't
 specify \code{n}, a five-colour palette will be used, which may not look right.
-Specify \code{n}.
-
-By default, n = 2 will give you light orange and dark orange. Use n = "2a"
-if you want light orange and cool_grey_11.}
+Specify \code{n}.}
 
 \item{reverse}{Logical. FALSE by default. Setting to TRUE reverses the
 standard colour order. Standard colour order runs from light to dark. If
@@ -23,7 +20,7 @@ you set reverse to TRUE, colours will run from dark to light.}
 variations of the standard colours.}
 }
 \description{
-Create a Djpr-appropriate palette for your chart.
+Create a DJPR-appropriate palette for your ggplot2 chart
 }
 \examples{
 library(ggplot2)

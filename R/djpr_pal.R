@@ -1,12 +1,9 @@
-#' Create a Djpr-appropriate palette for your chart.
+#' Create a DJPR-appropriate palette for your ggplot2 chart
 #'
 #' @param n Numeric. The number of levels in your colour scale. Minimum value is
 #'   1, maximum is 10. Using more than 6 is not recommended. If you don't
 #'   specify `n`, a five-colour palette will be used, which may not look right.
 #'   Specify `n`.
-#'
-#'   By default, n = 2 will give you light orange and dark orange. Use n = "2a"
-#'   if you want light orange and cool_grey_11.
 #' @param reverse Logical. FALSE by default. Setting to TRUE reverses the
 #'   standard colour order. Standard colour order runs from light to dark. If
 #'   you set reverse to TRUE, colours will run from dark to light.
@@ -46,17 +43,12 @@
 #'
 #' @export
 
-
-
-
 djpr_pal <- function(n = 0, reverse = FALSE, faded = FALSE) {
-
 
   if (n == 0) {
     n <- 5
     "Your chart will probably look better if you specify n in djpr_pal()."
   }
-
 
   if (n > 6 & n <= 10) {
     warning("Using more than six colours is not recommended.")
@@ -68,18 +60,13 @@ djpr_pal <- function(n = 0, reverse = FALSE, faded = FALSE) {
                 " colours; djpr_pal() only supports up to 10."))
   }
 
-
-  if (isFALSE(faded)) {
-    palette <- regular_palette(n)
-  }
-
+  palette <- regular_palette(n)
 
   palette
 }
 
 
 regular_palette <- function(n) {
-
 
   if (n == 1) {
     palette <- djprtheme::djpr_blue
