@@ -153,13 +153,15 @@ regular_palette <- function(n) {
   palette
 }
 
+#' @rdname palette
+#' @export
 djpr_colour_manual <- function(x){
   scale_colour_manual(values=djpr_pal(n=x))
 }
 
+#' @rdname palette
+#' @export
 djpr_fill_manual <- function(x){
   scale_fill_manual(values=djpr_pal(n=x))
 }
 
-#' @rdname palette
-#' @export
