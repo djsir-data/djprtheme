@@ -29,9 +29,9 @@ Create a DJPR-appropriate palette for your ggplot2 chart
 library(ggplot2)
 
 p <- ggplot(mtcars, aes(x = wt, y = mpg, col = factor(cyl))) +
-    geom_point() +
-    theme_djpr() +
-    scale_colour_manual(values = djpr_pal(n = 3))
+  geom_point() +
+  theme_djpr() +
+  scale_colour_manual(values = djpr_pal(n = 3))
 
 p
 
@@ -39,9 +39,9 @@ p
 # around scale_colour_manual():
 
 p <- ggplot(mtcars, aes(x = wt, y = mpg, col = factor(cyl))) +
-    geom_point() +
-    theme_djpr() +
-    djpr_colour_manual(3)
+  geom_point() +
+  theme_djpr() +
+  djpr_colour_manual(3)
 
 p
 
@@ -51,9 +51,7 @@ p
 
 p <- ggplot(mtcars, aes(x = mpg, fill = factor(cyl))) +
   geom_histogram() +
-    theme_djpr() +
-    djpr_fill_manual(3)
+  theme_djpr() +
+  djpr_fill_manual(3)
 p
-
-
 }
