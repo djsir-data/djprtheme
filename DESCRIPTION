@@ -11,6 +11,10 @@ Authors@R:
            family = "Casey",
            role = "aut",
            email = "nicholas.casey@ecodev.vic.gov.au"),
+    person(given = "Annett",
+           family = "Finger",
+           role = "aut",
+           email = "annett.finger@ecodev.vic.gov.au"),
     person(given = "Matt",
            family = "Cowgill",
            role = c("aut", "cre"),
@@ -19,7 +23,7 @@ Authors@R:
     person(given = "Department of Jobs, Precincts and Regions (Victoria)",
              role = c("cph", "fnd"))
            )
-Description: Enables the user to create ggplot2 charts that conform 
+Description: Create ggplot2 charts that conform 
     to the style guide of the Department of Jobs, Precincts and Regions 
     (Victoria).
 License: MIT + file LICENSE

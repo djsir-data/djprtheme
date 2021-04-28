@@ -4,35 +4,50 @@
 \alias{djpr_save_image}
 \title{Save ggplot2 plots as static images at the right size for DJPR PowerPoint decks.}
 \usage{
-djpr_save_image(filename, object = last_plot(), size = "full", dpi = "retina")
+djpr_save_image(
+  filename,
+  object = last_plot(),
+  size = c("full", "twothirds", "half", "quarter"),
+  remove_title = TRUE,
+  dpi = "retina"
+)
 }
 \arguments{
-\item{filename}{name of the file to be saved into}
+\item{filename}{name, including path and extension, of the file to be saved}
 
-\item{object}{object of plot to be saved, default is the last plot from last_plot()}
+\item{object}{name of the ggplot2 plot to be saved;
+default is the last plot, using \code{ggplot2::last_plot()}}
 
-\item{size}{size of picture. Options are: full, twothirds, half and quarter}
+\item{size}{size of picture. Options are: "full", "twothirds",
+"half" and "quarter"}
+
+\item{remove_title}{\code{TRUE} by default. When \code{TRUE}, title and subtitle will
+be removed from the plot before saving. If \code{FALSE}, title and subtitle are
+retained.}
 
 \item{dpi}{resolution of picture. Default is 'retina' which is 320 dpi.}
 }
 \description{
-This function is a wrapper around ggplot2::ggsave().
+This function is a wrapper around ggplot2::ggsave(). It is designed for
+saving plots as static images that will be then included in a DJPR PPTX deck.
 }
 \details{
-This enables users to save images in certain pre-defined sizes: full slide, half slide,
-2/3rds slide, and 1/4 slide to fit DJPR powerpoint deck template.
-The function also removes title and subtitle by default, as these
+Plots can be saved in pre-defined sizes: full slide, half slide,
+2/3rds slide, and 1/4 slide, to fit the DJPR-SPP PowerPoint deck template.
+
+The function removes the plot's title and subtitle by default, as these
 should be added on the slide itself rather than included in the image.
 }
 \examples{
+\dontrun{
 library(ggplot2)
 p <- ggplot(mtcars, aes(x = wt, y = mpg)) +
-     geom_point()
+  geom_point()
 
 djpr_save_image("test.png", p)
 
 # Or to save an image in the right size to fill half a Powerpoint slide
 
 djpr_save_image("test.png", p, size = "half")
-
+}
 }
