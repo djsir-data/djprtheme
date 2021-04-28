@@ -14,14 +14,14 @@
 
 djpr_save_image <- function(filename, object = last_plot(), size = "full", dpi = "retina") {
 
-# remove title and subtitle
-object$labels$title <- NULL
-object$labels$subtitle <- NULL
+  # remove title and subtitle
+  object$labels$title <- NULL
+  object$labels$subtitle <- NULL
 
-# define sizes
-if (size == "full") {
-  width <- 27
-  height <- 14.36
+  # define sizes
+  if (size == "full") {
+    width <- 27
+    height <- 14.36
   } else if (size == "threequarter") {
     width <- 20.25
     height <- 10.77
@@ -35,8 +35,6 @@ if (size == "full") {
     stop("Error: Parameter size not properly defined. Options are 'full', 'threequarter', 'half' and 'quarter'")
   }
 
-# ggsave function
-ggsave(filename=filename, plot = object, width = width, height = height, units = "cm", dpi=dpi)
-
+  # ggsave function
+  ggsave(filename = filename, plot = object, width = width, height = height, units = "cm", dpi = dpi)
 }
-
