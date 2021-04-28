@@ -12,11 +12,11 @@
 #' @import ggplot2
 #' @export
 
-djpr_save_image <- function(filename, plot = last_plot(), size = "full", dpi = "retina") {
+djpr_save_image <- function(filename, object = last_plot(), size = "full", dpi = "retina") {
 
 # remove title and subtitle
-plot <- last_plot(x = x, y = y, main = NULL, sub = NULL)   # works for plot()
-# plot <- last_plot(x = x, y = y, theme(plot.title = element_blank(), plot.subtitle=element_blank()))
+object$labels$title <- NULL
+object$labels$subtitle <- NULL
 
 # define sizes
 if (size == "full") {
@@ -36,7 +36,7 @@ if (size == "full") {
   }
 
 # ggsave function
-ggsave(filename=filename, plot = plot, width = width, height = height, units = "cm", dpi=dpi)
+ggsave(filename=filename, plot = object, width = width, height = height, units = "cm", dpi=dpi)
 
 }
 
