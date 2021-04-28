@@ -1,15 +1,29 @@
-#' A function that is a wrapper around ggplot2::ggsave().
+#' Save ggplot2 plots as static images at the right size for DJPR PowerPoint decks.
+#'
+#' This function is a wrapper around ggplot2::ggsave().
+#'
 #' This enables users to save images in certain pre-defined sizes: full slide, half slide,
 #' 2/3rds slide, and 1/4 slide to fit DJPR powerpoint deck template.
 #' The function also removes title and subtitle by default, as these
 #' should be added on the slide itself rather than included in the image.
 #' @name djpr_save_image
 #' @param filename name of the file to be saved into
-#' @param plot object of plot to be saved, default is the last plot from last_plot()
+#' @param object object of plot to be saved, default is the last plot from last_plot()
 #' @param size size of picture. Options are: full, threequarter, half and quarter
 #' @param dpi resolution of picture. Default is 'retina' which is 320 dpi.
 #' @import ggrepel
 #' @import ggplot2
+#' @examples
+#' library(ggplot2)
+#' p <- ggplot(mtcars, aes(x = wt, y = mpg)) +
+#'      geom_point()
+#'
+#' djpr_save_image("test.png", p)
+#'
+#' # Or to save an image in the right size to fill half a Powerpoint slide
+#'
+#' djpr_save_image("test.png", p, size = "half")
+#'
 #' @export
 
 djpr_save_image <- function(filename, object = last_plot(), size = "full", dpi = "retina") {
