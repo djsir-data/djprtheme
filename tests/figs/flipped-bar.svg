@@ -23,9 +23,9 @@
 <polyline points='273.64,539.73 273.64,26.71 ' style='stroke-width: 0.56; stroke: #D9D9D6; stroke-linecap: butt;' clip-path='url(#cpNjYuMzB8NzExLjM2fDUzOS43M3wyNi43MQ==)' />
 <polyline points='451.67,539.73 451.67,26.71 ' style='stroke-width: 0.56; stroke: #D9D9D6; stroke-linecap: butt;' clip-path='url(#cpNjYuMzB8NzExLjM2fDUzOS43M3wyNi43MQ==)' />
 <polyline points='629.70,539.73 629.70,26.71 ' style='stroke-width: 0.56; stroke: #D9D9D6; stroke-linecap: butt;' clip-path='url(#cpNjYuMzB8NzExLjM2fDUzOS43M3wyNi43MQ==)' />
-<rect x='95.62' y='371.40' width='445.60' height='144.29' style='stroke-width: 0.56; stroke: #FFFFFF; stroke-linecap: square; stroke-linejoin: miter; fill: #004C97;' clip-path='url(#cpNjYuMzB8NzExLjM2fDUzOS43M3wyNi43MQ==)' />
-<rect x='95.62' y='211.07' width='528.39' height='144.29' style='stroke-width: 0.56; stroke: #FFFFFF; stroke-linecap: square; stroke-linejoin: miter; fill: #004C97;' clip-path='url(#cpNjYuMzB8NzExLjM2fDUzOS43M3wyNi43MQ==)' />
-<rect x='95.62' y='50.75' width='586.42' height='144.29' style='stroke-width: 0.56; stroke: #FFFFFF; stroke-linecap: square; stroke-linejoin: miter; fill: #004C97;' clip-path='url(#cpNjYuMzB8NzExLjM2fDUzOS43M3wyNi43MQ==)' />
+<rect x='95.62' y='371.40' width='445.60' height='144.29' style='stroke-width: 0.56; stroke: #FFFFFF; stroke-linecap: square; stroke-linejoin: miter; fill: #004676;' clip-path='url(#cpNjYuMzB8NzExLjM2fDUzOS43M3wyNi43MQ==)' />
+<rect x='95.62' y='211.07' width='528.39' height='144.29' style='stroke-width: 0.56; stroke: #FFFFFF; stroke-linecap: square; stroke-linejoin: miter; fill: #004676;' clip-path='url(#cpNjYuMzB8NzExLjM2fDUzOS43M3wyNi43MQ==)' />
+<rect x='95.62' y='50.75' width='586.42' height='144.29' style='stroke-width: 0.56; stroke: #FFFFFF; stroke-linecap: square; stroke-linejoin: miter; fill: #004676;' clip-path='url(#cpNjYuMzB8NzExLjM2fDUzOS43M3wyNi43MQ==)' />
 <defs>
   <clipPath id='cpMC4wMHw3MjAuMDB8NTc2LjAwfDAuMDA='>
     <rect x='0.00' y='0.00' width='720.00' height='576.00' />
@@ -44,5 +44,5 @@
 <g clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDAuMDA=)'><text x='447.78' y='555.64' style='font-size: 14.00px; font-family: Liberation Sans;' textLength='7.78px' lengthAdjust='spacingAndGlyphs'>4</text></g>
 <g clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDAuMDA=)'><text x='625.81' y='555.64' style='font-size: 14.00px; font-family: Liberation Sans;' textLength='7.78px' lengthAdjust='spacingAndGlyphs'>6</text></g>
 <g clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDAuMDA=)'><text x='364.32' y='571.65' style='font-size: 14.00px; font-family: Liberation Sans;' textLength='49.02px' lengthAdjust='spacingAndGlyphs'>sep_len</text></g>
-<g clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDAuMDA=)'><text x='0.14' y='16.82' style='font-size: 14.00px; font-weight: bold; fill: #004C97; font-family: Liberation Sans;' textLength='75.42px' lengthAdjust='spacingAndGlyphs'>flipped_bar</text></g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDAuMDA=)'><text x='0.14' y='16.82' style='font-size: 14.00px; font-weight: bold; fill: #004676; font-family: Liberation Sans;' textLength='75.42px' lengthAdjust='spacingAndGlyphs'>flipped_bar</text></g>
 </svg>

@@ -40,9 +40,7 @@ devtools::install_github("djpr-data/djprtheme")
 
 ## The DJPR palette
 
-This is the DJPR palette, in alphabetical order:
-
-```{r colours, echo=FALSE}
+```{r colours, echo=FALSE, include=FALSE}
 library(djprtheme)
 library(ggplot2)
 
@@ -104,7 +102,7 @@ ggplot(df,
 ```
 
 
-You can style your plots with the DJPR palette using the `djpr_colour_manual()` and `djpr_fill_manual()` functions. You should specify the number of colours in your plot.
+You can style your plots with the DJPR palette using the `djpr_colour_manual()` and `djpr_fill_manual()` functions. You should specify the number of colours in your plot. These are the colours that will be used in your plot:
 
 ```{r echo=FALSE, warning=FALSE}
 make_col_tibble <- function(n) {

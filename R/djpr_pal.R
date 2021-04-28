@@ -50,7 +50,7 @@ djpr_pal <- function(n = 0, reverse = FALSE) {
   }
 
 
-  if (n > 10 & n != "2a") {
+  if (n > 10) {
     stop(paste0(
       "You've requested ", n,
       " colours; djpr_pal() only supports up to 10."
@@ -66,91 +66,86 @@ djpr_pal <- function(n = 0, reverse = FALSE) {
 regular_palette <- function(n) {
   if (n == 1) {
     palette <- djprtheme::djpr_blue
-  } else if (n == "2a") {
-    palette <- c(
-      djprtheme::djpr_pacific_blue,
-      djprtheme::djpr_blue
-    )
   } else if (n == 2) {
     palette <- c(
-      djprtheme::djpr_blue,
-      djprtheme::djpr_green
+      djprtheme::djpr_green,
+      djprtheme::djpr_blue
     )
   } else if (n == 3) {
     palette <- c(
-      djprtheme::djpr_pacific_blue,
-      djprtheme::djpr_cool_grey_1,
-      djprtheme::djpr_cobalt
+      djprtheme::djpr_green,
+      djprtheme::djpr_royal_blue,
+      djprtheme::djpr_blue
     )
   } else if (n == 4) {
     palette <- c(
-      djprtheme::djpr_pacific_blue,
-      djprtheme::djpr_blue,
       djprtheme::djpr_green,
-      djprtheme::djpr_spray
+      djprtheme::djpr_bondi_blue,
+      djprtheme::djpr_royal_blue,
+      djprtheme::djpr_blue
     )
   } else if (n == 5) {
     palette <- c(
-      djprtheme::djpr_pacific_blue,
-      djprtheme::djpr_blue,
+      djprtheme::djpr_watercourse,
       djprtheme::djpr_green,
-      djprtheme::djpr_spray,
-      djprtheme::djpr_cool_grey_1
+      djprtheme::djpr_bondi_blue,
+      djprtheme::djpr_royal_blue,
+      djprtheme::djpr_blue
     )
   } else if (n == 6) {
     palette <- c(
-      djprtheme::djpr_pacific_blue,
-      djprtheme::djpr_cobalt,
-      djprtheme::djpr_blue,
+      djprtheme::djpr_watercourse,
       djprtheme::djpr_green,
-      djprtheme::djpr_spray,
-      djprtheme::djpr_cool_grey_1
+      djprtheme::djpr_bondi_blue,
+      djprtheme::djpr_royal_blue,
+      djprtheme::djpr_blue,
+      djprtheme::djpr_cool_grey_11
     )
   } else if (n == 7) {
     palette <- c(
-      djprtheme::djpr_pacific_blue,
-      djprtheme::djpr_cobalt,
-      djprtheme::djpr_blue,
+      djprtheme::djpr_watercourse,
       djprtheme::djpr_green,
-      djprtheme::djpr_spray,
-      djprtheme::djpr_cool_grey_1,
-      djprtheme::djpr_cool_grey_11
+      djprtheme::djpr_bondi_blue,
+      djprtheme::djpr_royal_blue,
+      djprtheme::djpr_blue,
+      djprtheme::djpr_cool_grey_11,
+      djprtheme::djpr_purple
     )
   } else if (n == 8) {
     palette <- c(
-      djprtheme::djpr_pacific_blue,
-      djprtheme::djpr_cobalt,
-      djprtheme::djpr_iris_blue,
-      djprtheme::djpr_blue,
+      djprtheme::djpr_watercourse,
       djprtheme::djpr_green,
-      djprtheme::djpr_spray,
-      djprtheme::djpr_cool_grey_1,
-      djprtheme::djpr_cool_grey_11
+      djprtheme::djpr_bondi_blue,
+      djprtheme::djpr_royal_blue,
+      djprtheme::djpr_cobalt,
+      djprtheme::djpr_blue,
+      djprtheme::djpr_cool_grey_11,
+      djprtheme::djpr_purple
     )
   } else if (n == 9) {
     palette <- c(
-      djprtheme::djpr_pacific_blue,
-      djprtheme::djpr_cobalt,
-      djprtheme::djpr_iris_blue,
-      djprtheme::djpr_blue,
+      djprtheme::djpr_watercourse,
       djprtheme::djpr_green,
-      djprtheme::djpr_spray,
-      djprtheme::djpr_cool_grey_1,
-      djprtheme::djpr_golden_yellow,
-      djprtheme::djpr_cool_grey_11
+      djprtheme::djpr_faint_green,
+      djprtheme::djpr_bondi_blue,
+      djprtheme::djpr_royal_blue,
+      djprtheme::djpr_cobalt,
+      djprtheme::djpr_blue,
+      djprtheme::djpr_cool_grey_11,
+      djprtheme::djpr_purple
     )
   } else if (n == 10) {
     palette <- c(
-      djprtheme::djpr_pacific_blue,
-      djprtheme::djpr_cobalt,
-      djprtheme::djpr_iris_blue,
-      djprtheme::djpr_blue,
+      djprtheme::djpr_watercourse,
       djprtheme::djpr_green,
-      djprtheme::djpr_persian_green,
-      djprtheme::djpr_spray,
-      djprtheme::djpr_cool_grey_1,
-      djprtheme::djpr_golden_yellow,
-      djprtheme::djpr_cool_grey_11
+      djprtheme::djpr_faint_green,
+      djprtheme::djpr_faint_blue,
+      djprtheme::djpr_bondi_blue,
+      djprtheme::djpr_royal_blue,
+      djprtheme::djpr_cobalt,
+      djprtheme::djpr_blue,
+      djprtheme::djpr_cool_grey_11,
+      djprtheme::djpr_purple
     )
   }
   palette

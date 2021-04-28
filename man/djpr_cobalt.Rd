@@ -11,6 +11,6 @@ An object of class \code{character} of length 1.
 djpr_cobalt
 }
 \description{
-#004c97
+#004C97
 }
 \keyword{datasets}
