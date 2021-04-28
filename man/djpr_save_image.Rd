@@ -11,7 +11,7 @@ djpr_save_image(filename, object = last_plot(), size = "full", dpi = "retina")
 
 \item{object}{object of plot to be saved, default is the last plot from last_plot()}
 
-\item{size}{size of picture. Options are: full, threequarter, half and quarter}
+\item{size}{size of picture. Options are: full, twothirds, half and quarter}
 
 \item{dpi}{resolution of picture. Default is 'retina' which is 320 dpi.}
 }

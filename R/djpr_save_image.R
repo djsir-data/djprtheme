@@ -9,7 +9,7 @@
 #' @name djpr_save_image
 #' @param filename name of the file to be saved into
 #' @param object object of plot to be saved, default is the last plot from last_plot()
-#' @param size size of picture. Options are: full, threequarter, half and quarter
+#' @param size size of picture. Options are: full, twothirds, half and quarter
 #' @param dpi resolution of picture. Default is 'retina' which is 320 dpi.
 #' @import ggrepel
 #' @import ggplot2
@@ -36,9 +36,9 @@ djpr_save_image <- function(filename, object = last_plot(), size = "full", dpi =
   if (size == "full") {
     width <- 27
     height <- 14.36
-  } else if (size == "threequarter") {
-    width <- 20.25
-    height <- 10.77
+  } else if (size == "twothirds") {
+    width <- 18
+    height <- 9.57
   } else if (size == "half") {
     width <- 13.5
     height <- 7.18
@@ -46,7 +46,7 @@ djpr_save_image <- function(filename, object = last_plot(), size = "full", dpi =
     width <- 6.75
     height <- 3.59
   } else {
-    stop("Error: Parameter size not properly defined. Options are 'full', 'threequarter', 'half' and 'quarter'")
+    stop("Error: Parameter size not properly defined. Options are 'full', 'twothirds', 'half' and 'quarter'")
   }
 
   # ggsave function
