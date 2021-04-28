@@ -9,7 +9,7 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%",
+  out.width = "75%",
   fig.retina = 2
 )
 ```
@@ -20,6 +20,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![R-CMD-check](https://github.com/djpr-data/djprtheme/workflows/R-CMD-check/badge.svg)](https://github.com/djpr-data/djprtheme/actions)
+[![Codecov test coverage](https://codecov.io/gh/djpr-data/djprtheme/branch/main/graph/badge.svg)](https://codecov.io/gh/djpr-data/djprtheme?branch=main)
 <!-- badges: end -->
 
 **This package is still under active development**
@@ -37,25 +38,54 @@ You can install `djprtheme` from [GitHub](https://github.com/) with:
 devtools::install_github("djpr-data/djprtheme")
 ```
 
-## Colours
+## The DJPR palette
 
 This is the DJPR palette, in alphabetical order:
 
 ```{r colours, echo=FALSE}
 library(djprtheme)
 library(ggplot2)
-# This is a hacky way to get the vector of colours
-obj <- ls("package:djprtheme")
-# This is brittle - will fall over if some non-col object
-# has the name `djpr_something`
-obj <- obj[grepl("^djpr_", obj)]
 
-cols <- lapply(obj, function(x) eval(parse(text = x))) 
-cols <- as.character(cols)
-cols <- setNames(cols, obj)
+col_names <- c("djpr_blue",
+          "djpr_bondi_blue",
+          "djpr_cobalt",
+          "djpr_cool_grey_1",
+          "djpr_cool_grey_11",
+          "djpr_dark_pastel_green",
+          "djpr_electric_lime",
+          "djpr_golden_yellow",
+          "djpr_green",
+          "djpr_iris_blue",
+          "djpr_lima",
+          "djpr_malibu",
+          "djpr_navy_blue",
+          "djpr_pacific_blue",
+          "djpr_persian_green",
+          "djpr_spray",
+          "djpr_watercourse",
+          "djpr_watercourse_2")
+
+cols <- c(djpr_blue,
+          djpr_bondi_blue,
+          djpr_cobalt,
+          djpr_cool_grey_1,
+          djpr_cool_grey_11,
+          djpr_dark_pastel_green,
+          djpr_electric_lime,
+          djpr_golden_yellow,
+          djpr_green,
+          djpr_iris_blue,
+          djpr_lima,
+          djpr_malibu,
+          djpr_navy_blue,
+          djpr_pacific_blue,
+          djpr_persian_green,
+          djpr_spray,
+          djpr_watercourse,
+          djpr_watercourse_2)
 
 df <- data.frame(col = cols,
-                 name = obj)
+                 name = col_names)
 
 ggplot(df,
                 aes(x = factor(name, 
@@ -73,3 +103,39 @@ ggplot(df,
 
 ```
 
+
+You can style your plots with the DJPR palette using the `djpr_colour_manual()` and `djpr_fill_manual()` functions. You should specify the number of colours in your plot.
+
+```{r echo=FALSE, warning=FALSE}
+make_col_tibble <- function(n) {
+  dplyr::tibble(col = suppressWarnings(djpr_pal(n)),
+         order = c(1:n),
+         n = n)
+}
+
+djpr_colours <- lapply(c(1:10), make_col_tibble) %>%
+  dplyr::bind_rows()
+
+djpr_colours$col <- factor(djpr_colours$col)
+
+djpr_colours <- djpr_colours %>%
+  dplyr::mutate(n_desc = dplyr::if_else(n == 1, "n = 1", paste0("  ", n)))
+
+col_plot <- djpr_colours %>%
+  ggplot(aes(x = reorder(n_desc, -n), 
+             y = order, 
+             fill = col)) +
+  geom_tile(col = "white", size = 1) +
+  scale_fill_manual(values = levels(djpr_colours$col)) +
+  coord_flip(expand = FALSE, ylim = c(0, 13)) +
+  theme_djpr() +
+  theme(panel.grid = element_blank(),
+        axis.title = element_blank(),
+        axis.ticks = element_blank(),
+        axis.line = element_blank(),
+        axis.text.x = element_blank(),
+        legend.position = "none") +
+  labs(title = "These are the colours of the DJPR palette")
+
+col_plot
+```

@@ -1,13 +1,12 @@
 # This function is called by `theme_djpr` but is not exported.
 
 theme_djpr_base <- function(base_size = 12,
-                               base_family = "sans",
-                               base_line_size = points_to_mm(0.75),
-                               base_rect_size = points_to_mm(1),
-                               background = "white",
-                               legend = "bottom",
-                               panel_borders = FALSE) {
-
+                            base_family = "sans",
+                            base_line_size = points_to_mm(0.75),
+                            base_rect_size = points_to_mm(1),
+                            background = "white",
+                            legend = "bottom",
+                            panel_borders = FALSE) {
   half_line <- base_size / 2
 
   ret <-
@@ -43,15 +42,25 @@ theme_djpr_base <- function(base_size = 12,
       axis.line.x = NULL,
       axis.line.y = NULL,
       axis.text = element_text(size = rel(1)),
-      axis.text.x = element_text(margin = margin(t = base_size / 5,
-                                                 unit = "pt"),
-                                 vjust = 1),
-      axis.text.x.top = element_text(margin = margin(b = base_size / 5),
-                                     vjust = 0),
-      axis.text.y = element_text(margin = margin(r = base_size / 5),
-                                 hjust = 1),
-      axis.text.y.right = element_text(margin = margin(l = base_size / 5),
-                                       hjust = 0),
+      axis.text.x = element_text(
+        margin = margin(
+          t = base_size / 5,
+          unit = "pt"
+        ),
+        vjust = 1
+      ),
+      axis.text.x.top = element_text(
+        margin = margin(b = base_size / 5),
+        vjust = 0
+      ),
+      axis.text.y = element_text(
+        margin = margin(r = base_size / 5),
+        hjust = 1
+      ),
+      axis.text.y.right = element_text(
+        margin = margin(l = base_size / 5),
+        hjust = 0
+      ),
       axis.ticks = element_line(colour = "black"),
       axis.ticks.length = unit(half_line / 2, "pt"),
       axis.ticks.length.x = NULL,
@@ -61,20 +70,24 @@ theme_djpr_base <- function(base_size = 12,
       axis.ticks.length.y.left = NULL,
       axis.ticks.length.y.right = NULL,
       axis.title = element_text(size = rel(1)),
-      axis.title.x = element_text(margin = margin(t = half_line / 2),
-                                  vjust = 1),
-      axis.title.x.top = element_text(margin = margin(b = half_line / 2),
-                                      vjust = 0),
+      axis.title.x = element_text(
+        margin = margin(t = half_line / 2),
+        vjust = 1
+      ),
+      axis.title.x.top = element_text(
+        margin = margin(b = half_line / 2),
+        vjust = 0
+      ),
       axis.title.y = element_text(
         angle = 90,
         margin = margin(r = half_line /
-                          2),
+          2),
         vjust = 1
       ),
       axis.title.y.right = element_text(
         angle = -90,
         margin = margin(l = half_line /
-                          2),
+          2),
         vjust = 0
       ),
       legend.background = element_rect(colour = NA),
@@ -82,14 +95,20 @@ theme_djpr_base <- function(base_size = 12,
       legend.spacing.x = NULL,
       legend.spacing.y = NULL,
       legend.margin = margin(),
-      legend.key = element_rect(fill = "white",
-                                colour = "white"),
+      legend.key = element_rect(
+        fill = "white",
+        colour = "white"
+      ),
       legend.key.size = unit(1, "lines"),
       legend.key.height = NULL,
       legend.key.width = NULL,
-      legend.text = element_text(size = rel(1),
-                                 margin = margin(l = 0,
-                                                 r = base_size / 4, unit = "pt")),
+      legend.text = element_text(
+        size = rel(1),
+        margin = margin(
+          l = 0,
+          r = base_size / 4, unit = "pt"
+        )
+      ),
       legend.text.align = 0,
       legend.title = element_blank(),
       legend.title.align = NULL,
@@ -97,34 +116,44 @@ theme_djpr_base <- function(base_size = 12,
       legend.direction = "horizontal",
       legend.justification = "center",
       legend.box = "vertical",
-      legend.box.margin = margin(0, 0,
-                                 0, 0, "cm"),
+      legend.box.margin = margin(
+        0, 0,
+        0, 0, "cm"
+      ),
       legend.box.background = element_blank(),
-      legend.box.spacing = unit( half_line, "pt"),
+      legend.box.spacing = unit(half_line, "pt"),
       panel.background = element_rect(colour = NA),
       panel.border = element_blank(),
       panel.grid = element_line(colour = djprtheme::djpr_cool_grey_1),
       panel.grid.minor = element_blank(),
-      panel.spacing = unit(1,
-                           "lines"),
+      panel.spacing = unit(
+        1,
+        "lines"
+      ),
       panel.spacing.x = NULL,
       panel.spacing.y = NULL,
       panel.ontop = FALSE,
       strip.background = element_rect(),
       strip.text = element_text(
         size = rel(1),
-        margin = margin(0.8 * half_line,
-                        0.8 * half_line, 0.8 * half_line, 0.8 * half_line)
+        margin = margin(
+          0.8 * half_line,
+          0.8 * half_line, 0.8 * half_line, 0.8 * half_line
+        )
       ),
       strip.text.x = NULL,
       strip.text.y = element_text(angle = -90),
       strip.placement = "inside",
       strip.placement.x = NULL,
       strip.placement.y = NULL,
-      strip.switch.pad.grid = unit(half_line / 2,
-                                   "pt"),
-      strip.switch.pad.wrap = unit(half_line / 2,
-                                   "pt"),
+      strip.switch.pad.grid = unit(
+        half_line / 2,
+        "pt"
+      ),
+      strip.switch.pad.wrap = unit(
+        half_line / 2,
+        "pt"
+      ),
       plot.background = element_rect(),
       plot.title.position = "plot",
       plot.caption.position = "plot",
@@ -141,11 +170,13 @@ theme_djpr_base <- function(base_size = 12,
         size = rel(.8),
         hjust = 0,
         vjust = 1,
-        margin = margin(t = 0,
-                        r = 0,
-                        b = base_size * .75,
-                        l = 0,
-                        unit = "pt")
+        margin = margin(
+          t = 0,
+          r = 0,
+          b = base_size * .75,
+          l = 0,
+          unit = "pt"
+        )
       ),
       plot.caption = element_text(
         family = base_family,
@@ -178,5 +209,4 @@ theme_djpr_base <- function(base_size = 12,
   }
 
   ret
-
 }

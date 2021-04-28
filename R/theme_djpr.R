@@ -23,28 +23,33 @@ theme_djpr <- function(base_size = 12,
                        background = "white",
                        legend = "bottom",
                        panel_borders = FALSE) {
-
   if (!chart_type %in% c("normal", "scatter")) {
-    warning(paste0("Note: chart_type should be 'normal' or 'scatter', but you entered '",
-                   chart_type, "'. Reverting to 'normal'"))
+    warning(paste0(
+      "Note: chart_type should be 'normal' or 'scatter', but you entered '",
+      chart_type, "'. Reverting to 'normal'"
+    ))
     chart_type <- "normal"
   }
 
   if (chart_type == "normal") {
-    ret <- theme_djpr_normal(base_size = base_size,
-                             base_family = base_family,
-                             background = background,
-                             legend = legend,
-                             panel_borders = panel_borders,
-                             flipped = flipped)
+    ret <- theme_djpr_normal(
+      base_size = base_size,
+      base_family = base_family,
+      background = background,
+      legend = legend,
+      panel_borders = panel_borders,
+      flipped = flipped
+    )
   }
 
   if (chart_type == "scatter") {
-    ret <- theme_djpr_scatter(base_size = base_size,
-                              base_family = base_family,
-                              background = background,
-                              legend = legend,
-                              panel_borders = panel_borders)
+    ret <- theme_djpr_scatter(
+      base_size = base_size,
+      base_family = base_family,
+      background = background,
+      legend = legend,
+      panel_borders = panel_borders
+    )
     if (flipped) message("Note that the 'flipped' argument is ignored for scatter plots.")
   }
 
@@ -53,5 +58,4 @@ theme_djpr <- function(base_size = 12,
 
   # Return
   return(ret)
-
 }
