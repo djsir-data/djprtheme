@@ -65,11 +65,11 @@ djpr_pal <- function(n = 0, reverse = FALSE) {
 
 regular_palette <- function(n) {
   if (n == 1) {
-    palette <- djprtheme::djpr_blue
+    palette <- djprtheme::djpr_royal_blue
   } else if (n == 2) {
     palette <- c(
       djprtheme::djpr_green,
-      djprtheme::djpr_blue
+      djprtheme::djpr_royal_blue
     )
   } else if (n == 3) {
     palette <- c(

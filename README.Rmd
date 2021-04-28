@@ -41,7 +41,7 @@ devtools::install_github("djpr-data/djprtheme")
 ## The DJPR palette
 
 ```{r colours, echo=FALSE, include=FALSE}
-library(djprtheme)
+devtools::load_all()
 library(ggplot2)
 
 col_names <- c("djpr_blue",
