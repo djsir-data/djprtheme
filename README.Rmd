@@ -23,7 +23,7 @@ knitr::opts_chunk$set(
 [![Codecov test coverage](https://codecov.io/gh/djpr-data/djprtheme/branch/main/graph/badge.svg)](https://codecov.io/gh/djpr-data/djprtheme?branch=main)
 <!-- badges: end -->
 
-**This package is still under active development**
+**This package is under active development**
 
 The goal of `djprtheme` is to enable users to easily create ggplot2 charts that
 look good and are consistent with the style guide of the Victorian Department of
@@ -104,7 +104,7 @@ ggplot(df,
 
 You can style your plots with the DJPR palette using the `djpr_colour_manual()` and `djpr_fill_manual()` functions. You should specify the number of colours in your plot. These are the colours that will be used in your plot:
 
-```{r echo=FALSE, warning=FALSE}
+```{r palette-pyramid, echo=FALSE, warning=FALSE}
 make_col_tibble <- function(n) {
   dplyr::tibble(col = suppressWarnings(djpr_pal(n)),
          order = c(1:n),

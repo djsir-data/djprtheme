@@ -12,7 +12,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 coverage](https://codecov.io/gh/djpr-data/djprtheme/branch/main/graph/badge.svg)](https://codecov.io/gh/djpr-data/djprtheme?branch=main)
 <!-- badges: end -->
 
-**This package is still under active development**
+**This package is under active development**
 
 The goal of `djprtheme` is to enable users to easily create ggplot2
 charts that look good and are consistent with the style guide of the
@@ -34,4 +34,4 @@ You can style your plots with the DJPR palette using the
 specify the number of colours in your plot. These are the colours that
 will be used in your plot:
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="75%" />
+<img src="man/figures/README-palette-pyramid-1.png" width="75%" />
