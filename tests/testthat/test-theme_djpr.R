@@ -2,6 +2,12 @@ test_that("theme_djpr() returns expected type of object", {
   expect_s3_class(theme_djpr(), "gg")
 })
 
+test_that("theme_djpr() returns expected warnings and messages", {
+  expect_warning(theme_djpr(chart_type = "foobar"))
+  expect_message(theme_djpr(chart_type = "scatter", flipped = TRUE))
+
+})
+
 library(ggplot2)
 base_scatter <- ggplot(mtcars,
             aes(x = wt, y = mpg)) +
