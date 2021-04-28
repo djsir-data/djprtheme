@@ -2,22 +2,22 @@
 % Please edit documentation in R/theme_djpr.R
 \name{theme_djpr}
 \alias{theme_djpr}
-\title{Create a ggplot2 theme consistent with the DJPR style guide.}
+\title{Style your ggplot2 plots in the DJPR style.}
 \usage{
 theme_djpr(
-  base_size = 12,
+  base_size = 14,
   base_family = "sans",
   chart_type = "normal",
   flipped = FALSE,
   background = "white",
-  legend = "bottom",
+  legend = "off",
   panel_borders = FALSE
 )
 }
 \arguments{
-\item{base_size}{Size for text elements. Defaults to 12.}
+\item{base_size}{Size for text elements. Default is 14.}
 
-\item{base_family}{Font family for text elements. Defaults to "sans".}
+\item{base_family}{Font family for text elements. Default is "sans".}
 
 \item{chart_type}{"normal" by default. Set to "scatter" for scatter plots.}
 
@@ -27,12 +27,12 @@ hiding the horizontals. Ignored for type = "scatter".}
 
 \item{background}{"white" by default.}
 
-\item{legend}{"bottom" by default. Set to "right", "left", "top" or "off" as
-desired, or a two element numeric vector such as c(0.9, 0.1).}
+\item{legend}{"off" by default. Set to "right", "left", "top", "bottom",
+or "off" as desired, or a two element numeric vector such as c(0.9, 0.1).}
 
 \item{panel_borders}{\code{FALSE} by default. Set to \code{TRUE} to enable a black
 border around the plotting area.}
 }
 \description{
-Create a ggplot2 theme consistent with the DJPR style guide.
+Style your ggplot2 plots in the DJPR style.
 }
