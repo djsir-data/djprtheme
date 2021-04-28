@@ -9,7 +9,6 @@ test_that("djpr_pal() works", {
   }
 
   expect_error(djpr_pal(11))
-
 })
 
 test_that("djpr_*_manual() wrappers work", {
@@ -18,8 +17,10 @@ test_that("djpr_*_manual() wrappers work", {
 })
 
 library(ggplot2)
-test_plot <- ggplot(mtcars,
-                    aes(x = wt, y = mpg, col = factor(cyl))) +
+test_plot <- ggplot(
+  mtcars,
+  aes(x = wt, y = mpg, col = factor(cyl))
+) +
   geom_point() +
   djpr_colour_manual(3) +
   theme_minimal() +

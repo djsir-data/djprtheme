@@ -12,9 +12,9 @@
 #' library(ggplot2)
 #'
 #' p <- ggplot(mtcars, aes(x = wt, y = mpg, col = factor(cyl))) +
-#'     geom_point() +
-#'     theme_djpr() +
-#'     scale_colour_manual(values = djpr_pal(n = 3))
+#'   geom_point() +
+#'   theme_djpr() +
+#'   scale_colour_manual(values = djpr_pal(n = 3))
 #'
 #' p
 #'
@@ -22,9 +22,9 @@
 #' # around scale_colour_manual():
 #'
 #' p <- ggplot(mtcars, aes(x = wt, y = mpg, col = factor(cyl))) +
-#'     geom_point() +
-#'     theme_djpr() +
-#'     djpr_colour_manual(3)
+#'   geom_point() +
+#'   theme_djpr() +
+#'   djpr_colour_manual(3)
 #'
 #' p
 #'
@@ -34,15 +34,12 @@
 #'
 #' p <- ggplot(mtcars, aes(x = mpg, fill = factor(cyl))) +
 #'   geom_histogram() +
-#'     theme_djpr() +
-#'     djpr_fill_manual(3)
+#'   theme_djpr() +
+#'   djpr_fill_manual(3)
 #' p
-#'
-#'
 #' @export
 
 djpr_pal <- function(n = 0, reverse = FALSE) {
-
   if (n == 0) {
     n <- 5
     "Your chart will probably look better if you specify n in djpr_pal()."
@@ -54,8 +51,10 @@ djpr_pal <- function(n = 0, reverse = FALSE) {
 
 
   if (n > 10 & n != "2a") {
-    stop(paste0("You've requested ", n,
-                " colours; djpr_pal() only supports up to 10."))
+    stop(paste0(
+      "You've requested ", n,
+      " colours; djpr_pal() only supports up to 10."
+    ))
   }
 
   palette <- regular_palette(n)
@@ -65,88 +64,106 @@ djpr_pal <- function(n = 0, reverse = FALSE) {
 
 
 regular_palette <- function(n) {
-
   if (n == 1) {
     palette <- djprtheme::djpr_blue
   } else if (n == "2a") {
-    palette <- c(djprtheme::djpr_pacific_blue,
-                 djprtheme::djpr_blue)
+    palette <- c(
+      djprtheme::djpr_pacific_blue,
+      djprtheme::djpr_blue
+    )
   } else if (n == 2) {
-    palette <- c(djprtheme::djpr_blue,
-                 djprtheme::djpr_green)
+    palette <- c(
+      djprtheme::djpr_blue,
+      djprtheme::djpr_green
+    )
   } else if (n == 3) {
-    palette <- c(djprtheme::djpr_pacific_blue,
-                 djprtheme::djpr_cool_grey_1,
-                 djprtheme::djpr_cobalt)
+    palette <- c(
+      djprtheme::djpr_pacific_blue,
+      djprtheme::djpr_cool_grey_1,
+      djprtheme::djpr_cobalt
+    )
   } else if (n == 4) {
-    palette <- c(djprtheme::djpr_pacific_blue,
-                 djprtheme::djpr_blue,
-                 djprtheme::djpr_green,
-                 djprtheme::djpr_spray)
+    palette <- c(
+      djprtheme::djpr_pacific_blue,
+      djprtheme::djpr_blue,
+      djprtheme::djpr_green,
+      djprtheme::djpr_spray
+    )
   } else if (n == 5) {
-    palette <- c(djprtheme::djpr_pacific_blue,
-                 djprtheme::djpr_blue,
-                 djprtheme::djpr_green,
-                 djprtheme::djpr_spray,
-                 djprtheme::djpr_cool_grey_1)
+    palette <- c(
+      djprtheme::djpr_pacific_blue,
+      djprtheme::djpr_blue,
+      djprtheme::djpr_green,
+      djprtheme::djpr_spray,
+      djprtheme::djpr_cool_grey_1
+    )
   } else if (n == 6) {
-    palette <- c(djprtheme::djpr_pacific_blue,
-                 djprtheme::djpr_cobalt,
-                 djprtheme::djpr_blue,
-                 djprtheme::djpr_green,
-                 djprtheme::djpr_spray,
-                 djprtheme::djpr_cool_grey_1)
+    palette <- c(
+      djprtheme::djpr_pacific_blue,
+      djprtheme::djpr_cobalt,
+      djprtheme::djpr_blue,
+      djprtheme::djpr_green,
+      djprtheme::djpr_spray,
+      djprtheme::djpr_cool_grey_1
+    )
   } else if (n == 7) {
-    palette <- c(djprtheme::djpr_pacific_blue,
-                 djprtheme::djpr_cobalt,
-                 djprtheme::djpr_blue,
-                 djprtheme::djpr_green,
-                 djprtheme::djpr_spray,
-                 djprtheme::djpr_cool_grey_1,
-                 djprtheme::djpr_cool_grey_11)
+    palette <- c(
+      djprtheme::djpr_pacific_blue,
+      djprtheme::djpr_cobalt,
+      djprtheme::djpr_blue,
+      djprtheme::djpr_green,
+      djprtheme::djpr_spray,
+      djprtheme::djpr_cool_grey_1,
+      djprtheme::djpr_cool_grey_11
+    )
   } else if (n == 8) {
-    palette <- c(djprtheme::djpr_pacific_blue,
-                 djprtheme::djpr_cobalt,
-                 djprtheme::djpr_iris_blue,
-                 djprtheme::djpr_blue,
-                 djprtheme::djpr_green,
-                 djprtheme::djpr_spray,
-                 djprtheme::djpr_cool_grey_1,
-                 djprtheme::djpr_cool_grey_11)
+    palette <- c(
+      djprtheme::djpr_pacific_blue,
+      djprtheme::djpr_cobalt,
+      djprtheme::djpr_iris_blue,
+      djprtheme::djpr_blue,
+      djprtheme::djpr_green,
+      djprtheme::djpr_spray,
+      djprtheme::djpr_cool_grey_1,
+      djprtheme::djpr_cool_grey_11
+    )
   } else if (n == 9) {
-    palette <- c(djprtheme::djpr_pacific_blue,
-                 djprtheme::djpr_cobalt,
-                 djprtheme::djpr_iris_blue,
-                 djprtheme::djpr_blue,
-                 djprtheme::djpr_green,
-                 djprtheme::djpr_spray,
-                 djprtheme::djpr_cool_grey_1,
-                 djprtheme::djpr_golden_yellow,
-                 djprtheme::djpr_cool_grey_11)
+    palette <- c(
+      djprtheme::djpr_pacific_blue,
+      djprtheme::djpr_cobalt,
+      djprtheme::djpr_iris_blue,
+      djprtheme::djpr_blue,
+      djprtheme::djpr_green,
+      djprtheme::djpr_spray,
+      djprtheme::djpr_cool_grey_1,
+      djprtheme::djpr_golden_yellow,
+      djprtheme::djpr_cool_grey_11
+    )
   } else if (n == 10) {
-    palette <- c(djprtheme::djpr_pacific_blue,
-                 djprtheme::djpr_cobalt,
-                 djprtheme::djpr_iris_blue,
-                 djprtheme::djpr_blue,
-                 djprtheme::djpr_green,
-                 djprtheme::djpr_persian_green,
-                 djprtheme::djpr_spray,
-                 djprtheme::djpr_cool_grey_1,
-                 djprtheme::djpr_golden_yellow,
-                 djprtheme::djpr_cool_grey_11)
+    palette <- c(
+      djprtheme::djpr_pacific_blue,
+      djprtheme::djpr_cobalt,
+      djprtheme::djpr_iris_blue,
+      djprtheme::djpr_blue,
+      djprtheme::djpr_green,
+      djprtheme::djpr_persian_green,
+      djprtheme::djpr_spray,
+      djprtheme::djpr_cool_grey_1,
+      djprtheme::djpr_golden_yellow,
+      djprtheme::djpr_cool_grey_11
+    )
   }
   palette
 }
 
 #' @rdname palette
 #' @export
-djpr_colour_manual <- function(n){
+djpr_colour_manual <- function(n) {
   scale_colour_manual(values = djpr_pal(n = n))
 }
 
 #' @rdname palette
 #' @export
-djpr_fill_manual <- function(n){
+djpr_fill_manual <- function(n) {
   scale_fill_manual(values = djpr_pal(n = n))
 }
-

@@ -20,14 +20,14 @@ theme_djpr_normal <- function(base_size = 12,
     ret <- ret %+replace%
       ggplot2::theme(
         panel.grid.major.y = ggplot2::element_blank(),
-        #axis.line.x = ggplot2::element_blank(),
+        # axis.line.x = ggplot2::element_blank(),
         axis.ticks.x = ggplot2::element_blank(),
         axis.title.y = ggplot2::element_blank()
       )
   } else {
     ret <- ret %+replace%
       ggplot2::theme(
-        #axis.line.y = ggplot2::element_blank(),
+        # axis.line.y = ggplot2::element_blank(),
         axis.ticks.y = ggplot2::element_blank(),
         axis.title.y = ggplot2::element_blank(),
         panel.grid.major.x = ggplot2::element_blank()
@@ -35,5 +35,4 @@ theme_djpr_normal <- function(base_size = 12,
   }
 
   ret
-
 }
