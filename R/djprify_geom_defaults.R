@@ -5,13 +5,13 @@ djprify_geom_defaults <- function() {
 
   # Note: looks as if update_geom_defaults() may be deprecated in a
   # future ggplot2
-  # release (see https://github.com/tidyverse/ggplot2/pull/2749)
+  # release (see https://github.com/tidyverse/ggplot2/pull/2749 )
   # in favour of a new
   # way to update geom defaults; when this happens, replace the code below
   update_geom_defaults(
     "point",
     list(
-      colour = djprtheme::djpr_cobalt,
+      colour = djprtheme::djpr_royal_blue,
       size = 6 / .pt
     )
   )
@@ -19,7 +19,7 @@ djprify_geom_defaults <- function() {
     "bar",
     list(
       colour = "white",
-      fill = djprtheme::djpr_cobalt,
+      fill = djprtheme::djpr_royal_blue,
       size = 0.75 / .pt
     )
   )
@@ -27,14 +27,14 @@ djprify_geom_defaults <- function() {
     "col",
     list(
       colour = "white",
-      fill = djprtheme::djpr_cobalt,
+      fill = djprtheme::djpr_royal_blue,
       size = 0.75 / .pt
     )
   )
   update_geom_defaults(
     "line",
     list(
-      colour = djprtheme::djpr_cobalt,
+      colour = djprtheme::djpr_royal_blue,
       size = 3 / .pt
     )
   )
@@ -48,15 +48,15 @@ djprify_geom_defaults <- function() {
   update_geom_defaults(
     "smooth",
     list(
-      colour = djprtheme::djpr_cobalt,
-      fill = djprtheme::djpr_cobalt
+      colour = djprtheme::djpr_royal_blue,
+      fill = djprtheme::djpr_royal_blue
     )
   )
 
   update_geom_defaults(
     "path",
     list(
-      colour = djprtheme::djpr_cobalt,
+      colour = djprtheme::djpr_royal_blue,
       size = 3 / .pt
     )
   )
@@ -74,7 +74,7 @@ djprify_geom_defaults <- function() {
     list(
       size = 18 / .pt,
       fill = "white",
-      colour = djprtheme::djpr_cobalt
+      colour = djprtheme::djpr_royal_blue
     )
   )
 
@@ -83,60 +83,60 @@ djprify_geom_defaults <- function() {
     list(
       size = 18 / .pt,
       fill = "white",
-      colour = djprtheme::djpr_cobalt
+      colour = djprtheme::djpr_royal_blue
     )
   )
 
   update_geom_defaults(
     "area",
     list(
-      fill = djprtheme::djpr_cobalt,
-      col = djprtheme::djpr_cobalt
+      fill = djprtheme::djpr_royal_blue,
+      col = djprtheme::djpr_royal_blue
     )
   )
 
   update_geom_defaults(
     "density",
     list(
-      fill = djprtheme::djpr_cobalt,
-      col = djprtheme::djpr_cobalt
+      fill = djprtheme::djpr_royal_blue,
+      col = djprtheme::djpr_royal_blue
     )
   )
 
   update_geom_defaults(
     "dotplot",
     list(
-      fill = djprtheme::djpr_cobalt,
-      col = djprtheme::djpr_cobalt
+      fill = djprtheme::djpr_royal_blue,
+      col = djprtheme::djpr_royal_blue
     )
   )
 
   update_geom_defaults(
     "polygon",
     list(
-      fill = djprtheme::djpr_cobalt,
-      col = djprtheme::djpr_cobalt
+      fill = djprtheme::djpr_royal_blue,
+      col = djprtheme::djpr_royal_blue
     )
   )
 
   update_geom_defaults(
     "path",
-    list(col = djprtheme::djpr_cobalt)
+    list(col = djprtheme::djpr_royal_blue)
   )
 
   update_geom_defaults(
     "ribbon",
     list(
-      fill = djprtheme::djpr_cobalt,
-      col = djprtheme::djpr_cobalt
+      fill = djprtheme::djpr_royal_blue,
+      col = djprtheme::djpr_royal_blue
     )
   )
 
   update_geom_defaults(
     "rect",
     list(
-      fill = djprtheme::djpr_cobalt,
-      col = djprtheme::djpr_cobalt
+      fill = djprtheme::djpr_royal_blue,
+      col = djprtheme::djpr_royal_blue
     )
   )
 
@@ -144,38 +144,38 @@ djprify_geom_defaults <- function() {
     "boxplot",
     list(
       fill = djprtheme::djpr_blue,
-      col = djprtheme::djpr_cobalt
+      col = djprtheme::djpr_royal_blue
     )
   )
 
   update_geom_defaults(
     "crossbar",
     list(
-      fill = djprtheme::djpr_cobalt,
-      col = djprtheme::djpr_cobalt
+      fill = djprtheme::djpr_royal_blue,
+      col = djprtheme::djpr_royal_blue
     )
   )
 
   update_geom_defaults(
     "errorbar",
-    list(col = djprtheme::djpr_cobalt)
+    list(col = djprtheme::djpr_royal_blue)
   )
 
   update_geom_defaults(
     "linerange",
-    list(col = djprtheme::djpr_cobalt)
+    list(col = djprtheme::djpr_royal_blue)
   )
 
   update_geom_defaults(
     "pointrange",
-    list(col = djprtheme::djpr_cobalt)
+    list(col = djprtheme::djpr_royal_blue)
   )
 
   update_geom_defaults(
     "tile",
     list(
       col = "white",
-      fill = djprtheme::djpr_cobalt
+      fill = djprtheme::djpr_royal_blue
     )
   )
 }
