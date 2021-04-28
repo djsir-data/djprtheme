@@ -1,5 +1,5 @@
 #' Create a DJPR-appropriate palette for your ggplot2 chart
-#'
+#' @rdname palette
 #' @param n Numeric. The number of levels in your colour scale. Minimum value is
 #'   1, maximum is 10. Using more than 6 is not recommended. If you don't
 #'   specify `n`, a five-colour palette will be used, which may not look right.
@@ -7,8 +7,6 @@
 #' @param reverse Logical. FALSE by default. Setting to TRUE reverses the
 #'   standard colour order. Standard colour order runs from light to dark. If
 #'   you set reverse to TRUE, colours will run from dark to light.
-#' @param faded Logical. FALSE by default. Setting to TRUE returns the faded
-#'   variations of the standard colours.
 #'
 #' @examples
 #' library(ggplot2)
@@ -43,7 +41,7 @@
 #'
 #' @export
 
-djpr_pal <- function(n = 0, reverse = FALSE, faded = FALSE) {
+djpr_pal <- function(n = 0, reverse = FALSE) {
 
   if (n == 0) {
     n <- 5
@@ -142,13 +140,13 @@ regular_palette <- function(n) {
 
 #' @rdname palette
 #' @export
-djpr_colour_manual <- function(x){
-  scale_colour_manual(values=djpr_pal(n=x))
+djpr_colour_manual <- function(n){
+  scale_colour_manual(values = djpr_pal(n = n))
 }
 
 #' @rdname palette
 #' @export
-djpr_fill_manual <- function(x){
-  scale_fill_manual(values=djpr_pal(n=x))
+djpr_fill_manual <- function(n){
+  scale_fill_manual(values = djpr_pal(n = n))
 }
 

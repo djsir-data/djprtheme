@@ -2,9 +2,15 @@
 % Please edit documentation in R/djpr_pal.R
 \name{djpr_pal}
 \alias{djpr_pal}
+\alias{djpr_colour_manual}
+\alias{djpr_fill_manual}
 \title{Create a DJPR-appropriate palette for your ggplot2 chart}
 \usage{
-djpr_pal(n = 0, reverse = FALSE, faded = FALSE)
+djpr_pal(n = 0, reverse = FALSE)
+
+djpr_colour_manual(n)
+
+djpr_fill_manual(n)
 }
 \arguments{
 \item{n}{Numeric. The number of levels in your colour scale. Minimum value is
@@ -15,9 +21,6 @@ Specify \code{n}.}
 \item{reverse}{Logical. FALSE by default. Setting to TRUE reverses the
 standard colour order. Standard colour order runs from light to dark. If
 you set reverse to TRUE, colours will run from dark to light.}
-
-\item{faded}{Logical. FALSE by default. Setting to TRUE returns the faded
-variations of the standard colours.}
 }
 \description{
 Create a DJPR-appropriate palette for your ggplot2 chart
