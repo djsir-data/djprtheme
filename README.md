@@ -34,6 +34,7 @@ This is the DJPR palette, in alphabetical order:
 <img src="man/figures/README-colours-1.png" width="75%" />
 
 You can style your plots with the DJPR palette using the
-`djpr_colour_manual()` and `djpr_fill_manual()` functions.
+`djpr_colour_manual()` and `djpr_fill_manual()` functions. You should
+specify the number of colours in your plot.
 
 <img src="man/figures/README-unnamed-chunk-3-1.png" width="75%" />

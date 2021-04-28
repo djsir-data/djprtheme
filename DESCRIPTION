@@ -37,4 +37,4 @@ Imports:
     dplyr,
     ggplot2,
     ggrepel,
-    rlang
+    vdiffr

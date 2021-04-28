@@ -65,10 +65,24 @@ col_names <- c("djpr_blue",
           "djpr_watercourse",
           "djpr_watercourse_2")
 
-cols <- col_names %>%
-  rlang::parse_exprs() %>%
-  lapply(rlang::eval_tidy) %>%
-  as.character()
+cols <- c(djpr_blue,
+          djpr_bondi_blue,
+          djpr_cobalt,
+          djpr_cool_grey_1,
+          djpr_cool_grey_11,
+          djpr_dark_pastel_green,
+          djpr_electric_lime,
+          djpr_golden_yellow,
+          djpr_green,
+          djpr_iris_blue,
+          djpr_lima,
+          djpr_malibu,
+          djpr_navy_blue,
+          djpr_pacific_blue,
+          djpr_persian_green,
+          djpr_spray,
+          djpr_watercourse,
+          djpr_watercourse_2)
 
 df <- data.frame(col = cols,
                  name = col_names)
@@ -90,7 +104,7 @@ ggplot(df,
 ```
 
 
-You can style your plots with the DJPR palette using the `djpr_colour_manual()` and `djpr_fill_manual()` functions.
+You can style your plots with the DJPR palette using the `djpr_colour_manual()` and `djpr_fill_manual()` functions. You should specify the number of colours in your plot.
 
 ```{r echo=FALSE, warning=FALSE}
 make_col_tibble <- function(n) {
