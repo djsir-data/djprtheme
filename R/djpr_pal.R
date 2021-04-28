@@ -161,4 +161,5 @@ djpr_fill_manual <- function(x){
   scale_fill_manual(values=djpr_pal(n=x))
 }
 
-
+#' @rdname palette
+#' @export
