@@ -26,9 +26,11 @@
 #' # First, create a ggplot2 object
 #' the_ggplot <- ggplot(mtcars, aes(x = wt, y = mpg)) +
 #'   geom_point() +
-#'   labs(title = "Chart title",
-#'        subtitle = "Chart subtitle",
-#'        caption = "Notes and source information.")
+#'   labs(
+#'     title = "Chart title",
+#'     subtitle = "Chart subtitle",
+#'     caption = "Notes and source information."
+#'   )
 #'
 #' # Export `the_ggplot` to file `output.pptx`
 #' djpr_save_pptx("output.pptx", the_ggplot)
