@@ -24,7 +24,6 @@ theme_djpr <- function(base_size = 14,
                        background = "white",
                        legend = "off",
                        panel_borders = FALSE) {
-
   if (!chart_type %in% c("normal", "scatter")) {
     warning(paste0(
       "Note: chart_type should be 'normal' or 'scatter', but you entered '",

@@ -6,12 +6,12 @@
 # Fetch the ppt template
 get_template <- function() {
   # Template is modified by reference, so it must be re-loaded each time
-  path <- system.file("extdata", "template.pptx", package="djprtheme")
+  path <- system.file("extdata", "template.pptx", package = "djprtheme")
   officer::read_pptx(path)
 }
 
 # Substitute a default for empty values
-default <- function(x, replacement, test=is.null) {
+default <- function(x, replacement, test = is.null) {
   ifelse(test(x), replacement, x)
 }
 
@@ -33,14 +33,12 @@ default <- function(x, replacement, test=is.null) {
 #' # Export `the_ggplot` to file `output.pptx`
 #' djpr_save_pptx(the_ggplot, "output.pptx")
 #' # Specify layout and signpost
-#' djpr_save_pptx(the_ggplot, "output.pptx", layout="half", signpost="section")
+#' djpr_save_pptx(the_ggplot, "output.pptx", layout = "half", signpost = "section")
 #' }
-djpr_save_pptx <- function(
-  plot
-  , destination
-  , layout=c("full", "half", "twothirds")
-  , signpost=NULL
-) {
+djpr_save_pptx <- function(plot,
+                           destination,
+                           layout = c("full", "half", "twothirds"),
+                           signpost = NULL) {
   layout <- match.arg(layout)
 
   # Don't override the layout argument because we later use it to check whether
@@ -50,7 +48,7 @@ djpr_save_pptx <- function(
 
   slide <- officer::add_slide(get_template(), layout_name, master)
 
-  if(!is.null(signpost)) {
+  if (!is.null(signpost)) {
     slide <- officer::ph_with(
       slide, signpost, officer::ph_location_label("signpost")
     )
@@ -74,16 +72,16 @@ djpr_save_pptx <- function(
     slide, chart_caption, officer::ph_location_label("caption")
   )
 
-  plot <- plot + ggplot2::labs(title=NULL, subtitle=NULL, caption=NULL)
+  plot <- plot + ggplot2::labs(title = NULL, subtitle = NULL, caption = NULL)
   slide <- officer::ph_with(
-    slide, rvg::dml(ggobj=plot), officer::ph_location_label("chart")
+    slide, rvg::dml(ggobj = plot), officer::ph_location_label("chart")
   )
 
-  if(layout != "full") {
+  if (layout != "full") {
     slide <- officer::ph_with(
       slide, "", officer::ph_location_label("commentary")
     )
   }
 
-  print(slide, target=destination)
+  print(slide, target = destination)
 }

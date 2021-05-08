@@ -13,14 +13,15 @@ djpr_faint_green <- "#C0E4B5"
 
 
 usethis::use_data(djpr_blue,
-                  djpr_bondi_blue,
-                  djpr_royal_blue,
-                  djpr_green,
-                  djpr_watercourse,
-                  djpr_cool_grey_11,
-                  djpr_cobalt,
-                  djpr_faint_blue,
-                  djpr_purple,
-                  djpr_faint_green,
-                  internal = FALSE,
-                  overwrite = TRUE)
+  djpr_bondi_blue,
+  djpr_royal_blue,
+  djpr_green,
+  djpr_watercourse,
+  djpr_cool_grey_11,
+  djpr_cobalt,
+  djpr_faint_blue,
+  djpr_purple,
+  djpr_faint_green,
+  internal = FALSE,
+  overwrite = TRUE
+)
