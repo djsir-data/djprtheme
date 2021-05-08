@@ -70,10 +70,12 @@ djpr_save_image <- function(filename,
   }
 
   # ggsave function
-  ggplot2::ggsave(filename = filename,
-                  plot = object,
-                  width = width,
-                  height = height,
-                  units = "cm",
-                  dpi = dpi)
+  ggplot2::ggsave(
+    filename = filename,
+    plot = object,
+    width = width,
+    height = height,
+    units = "cm",
+    dpi = dpi
+  )
 }

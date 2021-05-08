@@ -1,6 +1,6 @@
 Package: djprtheme
 Title: Create Graphs in the DJPR Style 
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: 
     c(
     person(given = "Darren",
@@ -15,6 +15,10 @@ Authors@R:
            family = "Finger",
            role = "aut",
            email = "annett.finger@ecodev.vic.gov.au"),
+    person(given = "Duy",
+           family = "Nguyen",
+           role = "aut",
+           email = "duy.nguyen@ecodev.vic.gov.au"),
     person(given = "Matt",
            family = "Cowgill",
            role = c("aut", "cre"),
@@ -38,7 +42,9 @@ Config/testthat/edition: 3
 Depends: 
     R (>= 2.10)
 Imports: 
+    officer,
     dplyr,
     ggplot2,
     ggrepel,
-    vdiffr
+    vdiffr,
+    rvg
