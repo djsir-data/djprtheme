@@ -50,16 +50,15 @@ p +
 # These functions are particularly useful with bar charts
 library(dplyr)
 p2 <- iris \%>\%
-    group_by(Species) \%>\%
-    summarise(length = mean(Sepal.Length)) \%>\%
-    ggplot(aes(x = Species, y = length)) +
-    geom_col() +
-    theme_djpr()
+  group_by(Species) \%>\%
+  summarise(length = mean(Sepal.Length)) \%>\%
+  ggplot(aes(x = Species, y = length)) +
+  geom_col() +
+  theme_djpr()
 
 # p2 has space below the 0 line, which we don't want
 p2 +
-    djpr_y_continuous()
-
+  djpr_y_continuous()
 }
 \author{
 Matt Cowgill
