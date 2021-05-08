@@ -2,36 +2,51 @@
 % Please edit documentation in R/djpr_save_pptx.R
 \name{djpr_save_pptx}
 \alias{djpr_save_pptx}
-\title{Export a ggplot to a slide}
+\title{Export a ggplot to a DJPR SPP Powerpoint slide.}
 \usage{
 djpr_save_pptx(
-  plot,
   destination,
+  plot = ggplot2::last_plot(),
   layout = c("full", "half", "twothirds"),
   signpost = NULL
 )
 }
 \arguments{
-\item{plot}{The ggplot to insert}
+\item{destination}{File path to save the slide to, including extension,
+such as "output.pptx".}
 
-\item{destination}{File path to save the slide to}
+\item{plot}{The ggplot to turn into a slide.
+Default is \code{ggplot2::last_plot()}.}
 
-\item{layout}{Slide layout to use}
+\item{layout}{Slide layout to use. Options are "full", "half", and
+"twothirds". The layouts refer to the proportion of the slide width taken
+up by the chart.}
 
-\item{signpost}{Whether there should be a signpost heading}
+\item{signpost}{Signpost heading, if required. If \code{NULL} (the default), no
+signpost will be included.}
 }
 \value{
 Since the function saves the slide to a file, the return value
 is not defined and may change in future
 }
 \description{
-The exported slide will be in the SPP template.
+The exported slide will use the SPP template. All text is editable on the
+slide. Users can choose from several slide formats.
 }
 \examples{
 \dontrun{
+library(ggplot2)
+# First, create a ggplot2 object
+the_ggplot <- ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point() +
+  labs(title = "Chart title",
+       subtitle = "Chart subtitle",
+       caption = "Notes and source information.")
+
 # Export `the_ggplot` to file `output.pptx`
-djpr_save_pptx(the_ggplot, "output.pptx")
+djpr_save_pptx("output.pptx", the_ggplot)
+
 # Specify layout and signpost
-djpr_save_pptx(the_ggplot, "output.pptx", layout="half", signpost="section")
+djpr_save_pptx("output.pptx", the_ggplot, layout = "half", signpost = "section")
 }
 }
