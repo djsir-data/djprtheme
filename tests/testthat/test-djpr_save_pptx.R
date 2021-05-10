@@ -23,7 +23,7 @@ test_that("variations export without errors", {
 
   output_dir <- tempdir()
   # Generate file names so we can delete them later
-  fns <- sapply(1:7, function(i) {
+  fns <- sapply(1:9, function(i) {
     tempfile(paste0("slide", i, "_"), output_dir, ".pptx")
   })
   djpr_save_pptx(
@@ -62,12 +62,29 @@ test_that("variations export without errors", {
     signpost = "SGN"
   )
 
+  # Test the sidebar
+  djpr_save_pptx(
+    fns[8],
+    the_plot + labs(sidebar = c("some", "dot", "points")),
+    layout = "twothirds"
+  )
+
+  # Test slidepack generation
+  djpr_save_pptx(NULL, the_plot) %>%
+    djpr_save_pptx(
+      the_plot2 + labs(sidebar="commentary points"),
+      layout="half",
+      signpost="Section"
+    ) %>%
+    print(target=fns[9])
+
+
   # This test just checks that the above code finishes without error
   success <- T
   expect_true(success)
 
   # Test that all files exist
-  expect_true(all(file.exists(fns[1:7])))
+  expect_true(all(file.exists(fns)))
 
   # Test that all files are PPTX documents
   sapply(fns,

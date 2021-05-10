@@ -1,13 +1,17 @@
 # This file implements the `djpr_save_pptx` function which takes a ggplot
 # and exports it as a PowerPoint slide.
 
-#' Export a ggplot to a DJPR SPP Powerpoint slide.
+#' Export a ggplot to a DJPR SPP PowerPoint slide.
 #'
 #' The exported slide will use the SPP template. All text is editable on the
 #' slide. Users can choose from several slide formats.
 #'
-#' @param destination File path to save the slide to, including extension,
+#' @param destination The destination for the slide. Can be one of:
+#' - `NULL` (default): The slide will be kept in-memory and returned for further
+#' manipulation.
+#' - `character`: File path to save the slide to, including extension,
 #' such as "output.pptx".
+#' - A `rpptx` object: An in-memory slide pack to append to.
 #' @param plot The ggplot to turn into a slide.
 #' Default is `ggplot2::last_plot()`.
 #' @param layout Slide layout to use. Options are "full", "half", and
@@ -16,8 +20,10 @@
 #' @param signpost Signpost heading, if required. If `NULL` (the default), no
 #' signpost will be included.
 #'
-#' @return Since the function saves the slide to a file, the return value
-#' is not defined and may change in future
+#' @return If `destination` was `NULL` or a `pptx` object, returns the updated
+#' presentation ready for further changes.
+#' Otherwise, the return value is undefined (and may change in future) since
+#' the function saves the slide to a file.
 #' @export
 #'
 #' @examples
@@ -35,20 +41,44 @@
 #'
 #' # Specify layout and signpost
 #' djpr_save_pptx("output.pptx", the_ggplot, layout = "half", signpost = "section")
+#'
+#' # Export multiple slides. Different plots can be passed in for each slide.
+#' djpr_save_pptx(NULL, the_ggplot) %>%
+#'   djpr_save_pptx(the_ggplot, layout="half") %>%
+#'   print(target="slidepack.pptx")
 #' }
-djpr_save_pptx <- function(destination,
+djpr_save_pptx <- function(destination = NULL,
                            plot = ggplot2::last_plot(),
                            layout = c("full", "half", "twothirds"),
                            signpost = NULL) {
+  UseMethod("djpr_save_pptx")
+}
+
+#' @export
+djpr_save_pptx.NULL <- function(destination, ...) {
+  djpr_save_pptx(get_template(), ...)
+}
+
+#' @export
+djpr_save_pptx.character <- function(destination, ...) {
+  slide <- djpr_save_pptx(NULL, ...)
+  print(slide, target = destination)
+}
+
+#' @export
+djpr_save_pptx.rpptx <- function(destination,
+                                 plot = ggplot2::last_plot(),
+                                 layout = c("full", "half", "twothirds"),
+                                 signpost = NULL) {
   layout <- match.arg(layout)
   orig_plot <- plot
 
-  # Don't override the layout argument because we later use it to check whether
-  # to preserve the commentary box
+  # Don't override the layout argument because we later use it to check
+  # for commentary
   layout_name <- paste0(layout, ifelse(is.null(signpost), "", "+signpost"))
   master <- "SPPcharts"
 
-  slide <- officer::add_slide(get_template(), layout_name, master)
+  slide <- officer::add_slide(destination, layout_name, master)
 
   if (!is.null(signpost)) {
     slide <- officer::ph_with(
@@ -80,13 +110,19 @@ djpr_save_pptx <- function(destination,
   )
 
   if (layout != "full") {
+    sidebar <- plot$labels$sidebar
+    if(is.null(sidebar)) {
+      sidebar <- "" # Keep space for user to type commentary
+    } else {
+      sidebar <- officer::unordered_list(sidebar, rep(1, length(sidebar)))
+    }
     slide <- officer::ph_with(
-      slide, "", officer::ph_location_label("commentary")
+      slide, sidebar, officer::ph_location_label("commentary")
     )
   }
 
-  print(slide, target = destination)
   ggplot2::set_last_plot(orig_plot)
+  slide
 }
 
 # Fetch the ppt template

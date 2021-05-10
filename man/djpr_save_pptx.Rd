@@ -2,18 +2,24 @@
 % Please edit documentation in R/djpr_save_pptx.R
 \name{djpr_save_pptx}
 \alias{djpr_save_pptx}
-\title{Export a ggplot to a DJPR SPP Powerpoint slide.}
+\title{Export a ggplot to a DJPR SPP PowerPoint slide.}
 \usage{
 djpr_save_pptx(
-  destination,
+  destination = NULL,
   plot = ggplot2::last_plot(),
   layout = c("full", "half", "twothirds"),
   signpost = NULL
 )
 }
 \arguments{
-\item{destination}{File path to save the slide to, including extension,
-such as "output.pptx".}
+\item{destination}{The destination for the slide. Can be one of:
+\itemize{
+\item \code{NULL} (default): The slide will be kept in-memory and returned for further
+manipulation.
+\item \code{character}: File path to save the slide to, including extension,
+such as "output.pptx".
+\item A \code{rpptx} object: An in-memory slide pack to append to.
+}}
 
 \item{plot}{The ggplot to turn into a slide.
 Default is \code{ggplot2::last_plot()}.}
@@ -26,8 +32,10 @@ up by the chart.}
 signpost will be included.}
 }
 \value{
-Since the function saves the slide to a file, the return value
-is not defined and may change in future
+If \code{destination} was \code{NULL} or a \code{pptx} object, returns the updated
+presentation ready for further changes.
+Otherwise, the return value is undefined (and may change in future) since
+the function saves the slide to a file.
 }
 \description{
 The exported slide will use the SPP template. All text is editable on the
@@ -48,5 +56,10 @@ djpr_save_pptx("output.pptx", the_ggplot)
 
 # Specify layout and signpost
 djpr_save_pptx("output.pptx", the_ggplot, layout = "half", signpost = "section")
+
+# Export multiple slides. Different plots can be passed in for each slide.
+djpr_save_pptx(NULL, the_ggplot) \%>\%
+  djpr_save_pptx(the_ggplot, layout="half") \%>\%
+  print(target="slidepack.pptx")
 }
 }
