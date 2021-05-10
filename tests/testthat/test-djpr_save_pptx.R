@@ -70,12 +70,13 @@ test_that("variations export without errors", {
   expect_true(all(file.exists(fns[1:7])))
 
   # Test that all files are PPTX documents
-  sapply(fns,
-         function(x) {
-           officer::read_pptx(x) %>%
-             expect_s3_class("rpptx")
-           }
-         )
+  sapply(
+    fns,
+    function(x) {
+      officer::read_pptx(x) %>%
+        expect_s3_class("rpptx")
+    }
+  )
 
   if (retain_slides) {
     message(sprintf("Saving output slides to: %s", output_dir))
