@@ -20,7 +20,10 @@
 #' @param signpost Signpost heading, if required. If `NULL` (the default), no
 #' signpost will be included.
 #'
-#' @return If `destination` was `NULL` or a `pptx` object, returns the updated
+#' @details For plot layouts other than 'full', you can add dot points in the
+#' sidebar of the plot using `labs(sidebar = c("Dot point 1", "Dot point 2"))`.
+#'
+#' @return If `destination` is `NULL` or a `pptx` object, returns the updated
 #' presentation ready for further changes.
 #' Otherwise, the return value is undefined (and may change in future) since
 #' the function saves the slide to a file.
@@ -43,6 +46,14 @@
 #'
 #' # Specify layout and signpost
 #' djpr_save_pptx("output.pptx", the_ggplot, layout = "half", signpost = "section")
+#'
+#' # For slide layouts other than 'full', you can add text commentary in the
+#' # sidebar of the slide, ike this:
+#'
+#' the_ggplot_with_sidebar <- the_ggplot +
+#'   labs(sidebar = c("These are some comments", "For the sidebar of the slide"))
+#'
+#' djpr_save_pptx("output.pptx", the_ggplot_with_sidebar, layout = "twothirds")
 #'
 #' # Export multiple slides. Different plots can be passed in for each slide.
 #' djpr_save_pptx(NULL, the_ggplot) %>%

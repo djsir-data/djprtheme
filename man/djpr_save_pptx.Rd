@@ -32,7 +32,7 @@ up by the chart.}
 signpost will be included.}
 }
 \value{
-If \code{destination} was \code{NULL} or a \code{pptx} object, returns the updated
+If \code{destination} is \code{NULL} or a \code{pptx} object, returns the updated
 presentation ready for further changes.
 Otherwise, the return value is undefined (and may change in future) since
 the function saves the slide to a file.
@@ -40,6 +40,10 @@ the function saves the slide to a file.
 \description{
 The exported slide will use the SPP template. All text is editable on the
 slide. Users can choose from several slide formats.
+}
+\details{
+For plot layouts other than 'full', you can add dot points in the
+sidebar of the plot using \code{labs(sidebar = c("Dot point 1", "Dot point 2"))}.
 }
 \examples{
 \dontrun{
@@ -58,6 +62,14 @@ djpr_save_pptx("output.pptx", the_ggplot)
 
 # Specify layout and signpost
 djpr_save_pptx("output.pptx", the_ggplot, layout = "half", signpost = "section")
+
+# For slide layouts other than 'full', you can add text commentary in the
+# sidebar of the slide, ike this:
+
+the_ggplot_with_sidebar <- the_ggplot +
+  labs(sidebar = c("These are some comments", "For the sidebar of the slide"))
+
+djpr_save_pptx("output.pptx", the_ggplot_with_sidebar, layout = "twothirds")
 
 # Export multiple slides. Different plots can be passed in for each slide.
 djpr_save_pptx(NULL, the_ggplot) \%>\%
