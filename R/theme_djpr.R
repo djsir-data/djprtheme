@@ -9,8 +9,8 @@
 #'   TRUE, the theme will show a vertical axis line, ticks & panel grid, while
 #'   hiding the horizontals. Ignored for type = "scatter".
 #' @param background "white" by default.
-#' @param legend "off" by default. Set to "right", "left", "top", "bottom",
-#'  or "off" as desired, or a two element numeric vector such as c(0.9, 0.1).
+#' @param legend "none" by default. Set to "right", "left", "top", "bottom",
+#'  or "none" as desired, or a two element numeric vector such as c(0.9, 0.1).
 #' @param panel_borders `FALSE` by default. Set to `TRUE` to enable a black
 #'   border around the plotting area.
 #' @import ggrepel
@@ -22,7 +22,7 @@ theme_djpr <- function(base_size = 14,
                        chart_type = "normal",
                        flipped = FALSE,
                        background = "white",
-                       legend = "off",
+                       legend = "none",
                        panel_borders = FALSE) {
   if (!chart_type %in% c("normal", "scatter")) {
     warning(paste0(

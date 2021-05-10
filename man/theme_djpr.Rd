@@ -10,7 +10,7 @@ theme_djpr(
   chart_type = "normal",
   flipped = FALSE,
   background = "white",
-  legend = "off",
+  legend = "none",
   panel_borders = FALSE
 )
 }
@@ -27,8 +27,8 @@ hiding the horizontals. Ignored for type = "scatter".}
 
 \item{background}{"white" by default.}
 
-\item{legend}{"off" by default. Set to "right", "left", "top", "bottom",
-or "off" as desired, or a two element numeric vector such as c(0.9, 0.1).}
+\item{legend}{"none" by default. Set to "right", "left", "top", "bottom",
+or "none" as desired, or a two element numeric vector such as c(0.9, 0.1).}
 
 \item{panel_borders}{\code{FALSE} by default. Set to \code{TRUE} to enable a black
 border around the plotting area.}
