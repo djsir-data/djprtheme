@@ -47,4 +47,13 @@ get_plot_data(sample_plot)
 sample_plot <- qplot(mpg - mean(mpg), hp^2, data=mtcars)
 get_plot_data(sample_plot)
 # -> data.frame with columns: `mpg - mean(mpg)`, `hp^2`
+
+# Facet variables are included:
+sample_plot <- ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point() +
+  facet_wrap(~cyl)
+
+get_plot_data(sample_plot)
+# -> data.frame with columns: `wt`, `mpg`, `cyl`
+
 }

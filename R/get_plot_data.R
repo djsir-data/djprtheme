@@ -1,5 +1,3 @@
-
-
 #' Extract data behind a ggplot
 #'
 #' Extract the data that was passed into the `ggplot2()` or `qplot()` call,
@@ -42,6 +40,15 @@
 #' sample_plot <- qplot(mpg - mean(mpg), hp^2, data=mtcars)
 #' get_plot_data(sample_plot)
 #' # -> data.frame with columns: `mpg - mean(mpg)`, `hp^2`
+#'
+#' # Facet variables are included:
+#' sample_plot <- ggplot(mtcars, aes(x = wt, y = mpg)) +
+#'   geom_point() +
+#'   facet_wrap(~cyl)
+#'
+#' get_plot_data(sample_plot)
+#' # -> data.frame with columns: `wt`, `mpg`, `cyl`
+#'
 get_plot_data <- function(plot = ggplot2::last_plot()) {
   # This is a generic method to make it easier to support other plot types
   # in future
