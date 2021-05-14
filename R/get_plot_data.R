@@ -58,7 +58,17 @@ get_plot_data.ggplot <- function(plot = ggplot2::last_plot()) {
   )
   # aes() mappings across plot and layers
   layer_mappings <- lapply(plot$layers[layers_to_check], function(x) x$mapping)
-  mappings <- c(plot$mapping, unlist(layer_mappings, recursive = F))
+  layer_mappings <- unlist(layer_mappings, recursive = FALSE)
+
+  facet_params <- plot$facet$params
+  facet_mappings <- c(
+    # facet_wrap
+    facet_params$facets,
+    # facet_grid
+    facet_params$rows, facet_params$cols
+  )
+
+  mappings <- c(plot$mapping, layer_mappings, facet_mappings)
   mappings <- unique(mappings)
 
   # Construct the mapped data frame

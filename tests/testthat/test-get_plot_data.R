@@ -90,4 +90,38 @@ describe("get_plot_data()", {
       rownames(mtcars)
     )
   })
+
+  it("exports facet variables", {
+    test_plot <- ggplot(iris, aes(Petal.Width, Petal.Length)) +
+      facet_wrap(~Species) +
+      geom_point()
+    expect_equal(
+      get_plot_data(test_plot),
+      iris[, c("Petal.Width", "Petal.Length", "Species")]
+    )
+
+    test_plot <- ggplot(mtcars) +
+      facet_grid(cyl ~ gear) +
+      geom_point(aes(mpg, hp))
+    expect_equal(
+      get_plot_data(test_plot),
+      mtcars[, c("mpg", "hp", "cyl", "gear")]
+    )
+
+    # Expressions in facets
+    test_plot <- ggplot(mtcars, aes(mpg, hp)) +
+      facet_grid((cyl + carb) ~ paste("g", gear, sep=":")) +
+      geom_point()
+    expect_equal(
+      get_plot_data(test_plot),
+      with(mtcars, data.frame(
+        mpg,
+        hp,
+        (cyl + carb),
+        paste("g", gear, sep=":"),
+        check.names=F,
+        row.names=row.names(mtcars)
+      ))
+    )
+  })
 })
