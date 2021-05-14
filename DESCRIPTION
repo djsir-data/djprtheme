@@ -47,4 +47,5 @@ Imports:
     ggplot2,
     ggrepel,
     vdiffr,
-    rvg
+    rvg,
+    rlang
