@@ -1,3 +1,6 @@
+# djprtheme 0.0.2
+* get_plot_data() function added
+
 # djprtheme 0.0.1
 * djpr_save_pptx() function added
 * colour palette defined
