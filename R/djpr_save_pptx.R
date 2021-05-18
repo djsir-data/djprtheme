@@ -102,17 +102,17 @@ djpr_save_pptx.rpptx <- function(destination,
   # The following are defaulted to "" so the textboxes are preserved even
   # when there is no content to put in them
 
-  chart_title <- default(plot$labels$title, "")
+  chart_title <- default(extract_labs(plot, "title"), "")
   slide <- officer::ph_with(
     slide, chart_title, officer::ph_location_label("title")
   )
 
-  chart_subtitle <- default(plot$labels$subtitle, "")
+  chart_subtitle <- default(extract_labs(plot, "subtitle"), "")
   slide <- officer::ph_with(
     slide, chart_subtitle, officer::ph_location_label("subtitle")
   )
 
-  chart_caption <- default(plot$labels$caption, "")
+  chart_caption <- default(extract_labs(plot, "caption"), "")
   slide <- officer::ph_with(
     slide, chart_caption, officer::ph_location_label("caption")
   )
