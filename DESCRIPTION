@@ -1,6 +1,6 @@
 Package: djprtheme
 Title: Create Graphs in the DJPR Style 
-Version: 0.0.2
+Version: 0.0.2.900
 Authors@R: 
     c(
     person(given = "Darren",
@@ -37,7 +37,8 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Suggests: 
     covr,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    patchwork
 Config/testthat/edition: 3
 Depends: 
     R (>= 2.10)
