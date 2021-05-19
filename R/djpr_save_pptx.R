@@ -117,7 +117,18 @@ djpr_save_pptx.rpptx <- function(destination,
     slide, chart_caption, officer::ph_location_label("caption")
   )
 
-  plot <- plot + ggplot2::labs(title = NULL, subtitle = NULL, caption = NULL)
+  # Remove all labels from plots
+  if (inherits(plot, "patchwork")) {
+    plot$patches$annotation$title <- NULL
+    plot$patches$annotation$subtitle <- NULL
+    plot$patches$annotation$caption <- NULL
+  } else {
+    plot <- plot +
+      ggplot2::labs(title = NULL,
+                    subtitle = NULL,
+                    caption = NULL)
+  }
+
   slide <- officer::ph_with(
     slide, rvg::dml(ggobj = plot), officer::ph_location_label("chart")
   )
