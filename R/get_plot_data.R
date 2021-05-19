@@ -63,7 +63,6 @@ get_plot_data <- function(plot = ggplot2::last_plot()) {
 
 }
 
-#' @export
 get_plot_data.ggplot <- function(plot = ggplot2::last_plot()) {
   # Layers to add to the base aes() mappings
   layers_to_check <- which(
@@ -95,15 +94,23 @@ get_plot_data.ggplot <- function(plot = ggplot2::last_plot()) {
   mapped_df
 }
 
-#' @export
 get_plot_data.patchwork <- function(plot = ggplot2::last_plot()) {
 
   # The number of subplots in a patchwork is the number of patches
   # plus 1 (for the main plot)
   n_subplots <- length(plot$patches$plots) + 1
+  seq_subplots <- seq_len(n_subplots)
+
+  # Check if each subplot is a ggplot
+  is.ggplot <- function(x) inherits(x, "gg")
+
+  subplots_are_gg <- sapply(seq_subplots,
+                            function(x) is.ggplot(plot[[x]]))
+
+  seq_subplots <- seq_subplots[subplots_are_gg]
 
   # For each subplot, get the plot data
-  patch_dfs <- lapply(seq_len(n_subplots),
+  patch_dfs <- lapply(seq_subplots,
          function(x) get_plot_data.ggplot(plot[[x]]))
 
   # Combine the subplot data in one data frame (this is suboptimal,
