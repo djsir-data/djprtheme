@@ -50,9 +50,17 @@
 #' # -> data.frame with columns: `wt`, `mpg`, `cyl`
 #'
 get_plot_data <- function(plot = ggplot2::last_plot()) {
-  # This is a generic method to make it easier to support other plot types
-  # in future
-  UseMethod("get_plot_data", plot)
+  # Note: using `if` rather than `UseMethod` for now as patchwork plots
+  # were defaulting to the .ggplot method. Will rectify later
+
+  stopifnot(inherits(plot, "gg")) # Note: patchwork plots are also of class 'gg'
+
+  if (inherits(plot, "patchwork")) {
+    get_plot_data.patchwork(plot = plot)
+  } else {
+    get_plot_data.ggplot(plot = plot)
+  }
+
 }
 
 #' @export
@@ -85,4 +93,22 @@ get_plot_data.ggplot <- function(plot = ggplot2::last_plot()) {
   # Preserve row names without stringifying
   attr(mapped_df, "row.names") <- attr(plot$data, "row.names")
   mapped_df
+}
+
+#' @export
+get_plot_data.patchwork <- function(plot = ggplot2::last_plot()) {
+
+  # The number of subplots in a patchwork is the number of patches
+  # plus 1 (for the main plot)
+  n_subplots <- length(plot$patches$plots) + 1
+
+  # For each subplot, get the plot data
+  patch_dfs <- lapply(seq_len(n_subplots),
+         function(x) get_plot_data.ggplot(plot[[x]]))
+
+  # Combine the subplot data in one data frame (this is suboptimal,
+  # will improve later)
+  patch_dfs <- dplyr::bind_rows(patch_dfs)
+
+  patch_dfs
 }

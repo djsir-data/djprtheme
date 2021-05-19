@@ -1,7 +1,6 @@
 # djprtheme 0.0.2.900
 * extract_labs() added
 
-
 # djprtheme 0.0.2
 * get_plot_data() function added
 

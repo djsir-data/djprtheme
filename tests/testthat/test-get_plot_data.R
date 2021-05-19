@@ -124,4 +124,30 @@ describe("get_plot_data()", {
       ))
     )
   })
+
+  it("exports patchwork plot data", {
+    p1 <- ggplot(mtcars, aes(x = wt, y = mpg)) +
+      geom_point() +
+      labs(subtitle = "Plot 1 subtitle",
+           title = "Plot 1 title")
+
+    p2 <- ggplot(economics, aes(x = date, y = unemploy)) +
+      geom_line() +
+      labs(subtitle = "Plot 2 subtitle",
+           title = "Plot 2 title",
+           caption = "Plot 2 caption")
+
+    comb <- patchwork::wrap_plots(p1, p2) +
+      patchwork::plot_annotation(title = "Combined plot title",
+                      subtitle = "Combined plot subtitle",
+                      caption = "Combined plot caption")
+
+    df1 <- mtcars %>%
+      dplyr::select(.data$wt, .data$mpg)
+
+    df2 <- ggplot2::economics %>%
+      dplyr::select(.data$date, .data$unemploy)
+    expect_equal(dplyr::bind_rows(df1, df2),
+                 get_plot_data(comb))
+  })
 })
