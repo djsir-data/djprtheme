@@ -22,6 +22,7 @@
 #'# Can be supplied directly to the `breaks` argument of
 #'# `ggplot2::scale_*_continuous()`, but limits will include
 #'# padding defined by `expand`
+#'library(ggplot2)
 #'
 #'ggplot(ggplot2::economics,
 #'       aes(x = date, y = unemploy)) +

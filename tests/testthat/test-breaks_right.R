@@ -24,10 +24,10 @@ test_that("breaks_right() works with date vectors", {
 })
 
 test_that("breaks_right() works when supplied to scale_x_date()", {
-  p <- ggplot(ggplot2::economics,
-        aes(x = date, y = unemploy)) +
-   geom_line() +
-   scale_x_date(breaks = breaks_right)
+  p <- ggplot2::ggplot(ggplot2::economics,
+                       ggplot2::aes(x = date, y = unemploy)) +
+    ggplot2::geom_line() +
+    ggplot2::scale_x_date(breaks = breaks_right)
 
   expect_s3_class(p, "gg")
 
