@@ -35,3 +35,7 @@ specify the number of colours in your plot. These are the colours that
 will be used in your plot:
 
 <img src="man/figures/README-palette-pyramid-1.png" width="75%" />
+
+The hex codes for those colours are:
+
+<img src="man/figures/README-palette-hex-codes-1.png" width="75%" />

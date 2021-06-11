@@ -1,5 +1,7 @@
 ---
 output: github_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -136,4 +138,21 @@ col_plot <- djpr_colours %>%
   labs(title = "These are the colours of the DJPR palette")
 
 col_plot
+```
+
+
+The hex codes for those colours are:
+
+```{r palette-hex-codes, echo = FALSE, warning = FALSE}
+hexes <- suppressWarnings(djpr_pal(10))
+
+hex_df <- data.frame(hex = hexes,
+       row = -seq_along(hexes))
+
+ggplot(hex_df, aes(y = row, fill = hex, label = hex, x = 1)) +
+  geom_tile() +
+  geom_text(aes(label = hex), colour = "white") +
+  scale_fill_identity()  +
+  theme_void()
+
 ```
