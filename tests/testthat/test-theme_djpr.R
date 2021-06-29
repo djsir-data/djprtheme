@@ -24,8 +24,7 @@ regular_scatter <- base_scatter +
 
 test_that("plot styled with theme_djpr() looks correct", {
   vdiffr::expect_doppelganger("regular_scatter",
-    regular_scatter,
-    path = ""
+    regular_scatter
   )
 })
 
@@ -34,8 +33,7 @@ scatter <- base_scatter +
 
 test_that("scatterplsot styled with theme_djpr() looks correct", {
   vdiffr::expect_doppelganger("scatter",
-    scatter,
-    path = ""
+    scatter
   )
 })
 
@@ -50,8 +48,7 @@ basic_bar <- bar +
 
 test_that("regular bar chart styled with theme_djpr() looks correct", {
   vdiffr::expect_doppelganger("basic_bar",
-    basic_bar,
-    path = ""
+    basic_bar
   )
 })
 
@@ -61,7 +58,6 @@ flipped_bar <- bar +
 
 test_that("flipped bar chart styled with theme_djpr() looks correct", {
   vdiffr::expect_doppelganger("flipped_bar",
-    flipped_bar,
-    path = ""
+    flipped_bar
   )
 })

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' data-engine-version='2.0' width='720.00pt' height='576.00pt' viewBox='0 0 720.00 576.00'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='720.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='0.00' y='0.00' width='720.00' height='576.00' style='stroke-width: 0.75; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMTQuMjF8NzExLjM2fDI2LjcyfDUzOS43MQ=='>
+    <rect x='14.21' y='26.72' width='697.15' height='513.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMTQuMjF8NzExLjM2fDI2LjcyfDUzOS43MQ==)'>
+<rect x='14.21' y='26.72' width='697.15' height='513.00' style='stroke-width: 0.75; stroke: none; fill: #FFFFFF;' />
+<polyline points='14.21,516.40 711.36,516.40 ' style='stroke-width: 0.56; stroke: #D9D9D6; stroke-linecap: butt;' />
+<polyline points='14.21,374.82 711.36,374.82 ' style='stroke-width: 0.56; stroke: #D9D9D6; stroke-linecap: butt;' />
+<polyline points='14.21,233.24 711.36,233.24 ' style='stroke-width: 0.56; stroke: #D9D9D6; stroke-linecap: butt;' />
+<polyline points='14.21,91.66 711.36,91.66 ' style='stroke-width: 0.56; stroke: #D9D9D6; stroke-linecap: butt;' />
+<rect x='46.89' y='162.02' width='196.07' height='354.37' style='stroke-width: 0.56; stroke: #FFFFFF; stroke-linecap: square; stroke-linejoin: miter; fill: #2A6FA2;' />
+<rect x='264.75' y='96.19' width='196.07' height='420.21' style='stroke-width: 0.56; stroke: #FFFFFF; stroke-linecap: square; stroke-linejoin: miter; fill: #2A6FA2;' />
+<rect x='482.61' y='50.03' width='196.07' height='466.36' style='stroke-width: 0.56; stroke: #FFFFFF; stroke-linecap: square; stroke-linejoin: miter; fill: #2A6FA2;' />
+</g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='7.93' y='521.21' text-anchor='end' style='font-size: 14.00px; font-family: sans;' textLength='7.79px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='7.93' y='379.63' text-anchor='end' style='font-size: 14.00px; font-family: sans;' textLength='7.79px' lengthAdjust='spacingAndGlyphs'>2</text>
+<text x='7.93' y='238.05' text-anchor='end' style='font-size: 14.00px; font-family: sans;' textLength='7.79px' lengthAdjust='spacingAndGlyphs'>4</text>
+<text x='7.93' y='96.47' text-anchor='end' style='font-size: 14.00px; font-family: sans;' textLength='7.79px' lengthAdjust='spacingAndGlyphs'>6</text>
+<polyline points='14.21,539.71 711.36,539.71 ' style='stroke-width: 0.75; stroke-linecap: butt;' />
+<polyline points='144.92,543.20 144.92,539.71 ' style='stroke-width: 0.56; stroke-linecap: butt;' />
+<polyline points='362.78,543.20 362.78,539.71 ' style='stroke-width: 0.56; stroke-linecap: butt;' />
+<polyline points='580.64,543.20 580.64,539.71 ' style='stroke-width: 0.56; stroke-linecap: butt;' />
+<text x='144.92' y='555.63' text-anchor='middle' style='font-size: 14.00px; font-family: sans;' textLength='41.26px' lengthAdjust='spacingAndGlyphs'>setosa</text>
+<text x='362.78' y='555.63' text-anchor='middle' style='font-size: 14.00px; font-family: sans;' textLength='59.92px' lengthAdjust='spacingAndGlyphs'>versicolor</text>
+<text x='580.64' y='555.63' text-anchor='middle' style='font-size: 14.00px; font-family: sans;' textLength='51.36px' lengthAdjust='spacingAndGlyphs'>virginica</text>
+<text x='362.78' y='571.65' text-anchor='middle' style='font-size: 14.00px; font-family: sans;' textLength='49.82px' lengthAdjust='spacingAndGlyphs'>Species</text>
+<text x='0.14' y='16.83' style='font-size: 14.00px; font-weight: bold; fill: #004676; font-family: sans;' textLength='60.72px' lengthAdjust='spacingAndGlyphs'>basic_bar</text>
+</g>
+</svg>

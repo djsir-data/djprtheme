@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' data-engine-version='2.0' width='720.00pt' height='576.00pt' viewBox='0 0 720.00 576.00'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='720.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA=)'>
+</g>
+<defs>
+  <clipPath id='cpMC4wMHw2NDMuMTR8MTcuMzB8NTc2LjAw'>
+    <rect x='0.00' y='17.30' width='643.14' height='558.70' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw2NDMuMTR8MTcuMzB8NTc2LjAw)'>
+<rect x='29.23' y='42.70' width='77.92' height='59.45' style='stroke-width: 1.07; stroke: #2A6FA2; stroke-linecap: square; stroke-linejoin: miter; fill: #F8766D;' />
+<rect x='139.83' y='42.70' width='428.70' height='59.45' style='stroke-width: 1.07; stroke: #2A6FA2; stroke-linecap: square; stroke-linejoin: miter; fill: #A3A500;' />
+<rect x='29.23' y='112.40' width='584.68' height='22.39' style='stroke-width: 1.07; stroke: #2A6FA2; stroke-linecap: square; stroke-linejoin: miter; fill: #00BF7D;' />
+<rect x='29.23' y='533.79' width='584.68' height='16.82' style='stroke-width: 1.07; stroke: #2A6FA2; stroke-linecap: square; stroke-linejoin: miter; fill: #00B0F6;' />
+<rect x='333.06' y='144.67' width='280.85' height='379.32' style='stroke-width: 1.07; stroke: #2A6FA2; stroke-linecap: square; stroke-linejoin: miter; fill: #E76BF3;' />
+<text x='68.20' y='78.62' text-anchor='middle' style='font-size: 18.00px; fill: #FFFF00; font-family: sans;' textLength='80.03px' lengthAdjust='spacingAndGlyphs'>SECTION</text>
+<text x='354.18' y='78.62' text-anchor='middle' style='font-size: 18.00px; fill: #FFFF00; font-family: sans;' textLength='92.04px' lengthAdjust='spacingAndGlyphs'>Old Faithful</text>
+<text x='473.48' y='340.53' text-anchor='middle' style='font-size: 18.00px; fill: #FFFF00; font-family: sans;' textLength='124.06px' lengthAdjust='spacingAndGlyphs'>Thisisoldfaithful</text>
+</g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='649.52' y='256.90' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #2A6FA2; stroke-linecap: square; stroke-linejoin: miter; fill: #F8766D;' />
+<rect x='649.52' y='274.18' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #2A6FA2; stroke-linecap: square; stroke-linejoin: miter; fill: #A3A500;' />
+<rect x='649.52' y='291.46' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #2A6FA2; stroke-linecap: square; stroke-linejoin: miter; fill: #00BF7D;' />
+<rect x='649.52' y='308.74' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #2A6FA2; stroke-linecap: square; stroke-linejoin: miter; fill: #00B0F6;' />
+<rect x='649.52' y='326.02' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #2A6FA2; stroke-linecap: square; stroke-linejoin: miter; fill: #E76BF3;' />
+<text x='671.57' y='267.86' style='font-size: 8.80px; font-family: sans;' textLength='32.78px' lengthAdjust='spacingAndGlyphs'>signpost</text>
+<text x='671.57' y='285.14' style='font-size: 8.80px; font-family: sans;' textLength='13.69px' lengthAdjust='spacingAndGlyphs'>title</text>
+<text x='671.57' y='302.42' style='font-size: 8.80px; font-family: sans;' textLength='27.88px' lengthAdjust='spacingAndGlyphs'>subtitle</text>
+<text x='671.57' y='319.70' style='font-size: 8.80px; font-family: sans;' textLength='28.38px' lengthAdjust='spacingAndGlyphs'>caption</text>
+<text x='671.57' y='336.98' style='font-size: 8.80px; font-family: sans;' textLength='48.43px' lengthAdjust='spacingAndGlyphs'>commentary</text>
+<text x='0.00' y='14.56' style='font-size: 13.20px; font-family: sans;' textLength='71.18px' lengthAdjust='spacingAndGlyphs'>slide-pack-3</text>
+</g>
+</svg>
