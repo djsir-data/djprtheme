@@ -1,19 +1,24 @@
 library(ggplot2)
+#
+# test_that("gg_font_change fails with unexpected input", {
+#
+# })
 
 p <- ggplot(mtcars, aes(x = wt, y = mpg)) +
   geom_point(size = 3, colour = "black") +
-  geom_text(aes(label = mpg)) +
+  geom_text(aes(label = mpg),
+            size = 3) +
   theme_minimal()
 
 test_that("gg_font_change works", {
-  # Before we run gg_font_change() there should be no aes_params
-  expect_length(p$layers[[2]]$aes_params, 0)
+  # Before we run gg_font_change() there should be 1 aes_param (size)
+  expect_length(p$layers[[2]]$aes_params, 1)
 
   p_f <- gg_font_change(p)
 
   # Check that gg_font_change is adding `family` to `aes_params` of
   # the text layer
-  expect_length(p_f$layers[[2]]$aes_params, 1)
+  expect_length(p_f$layers[[2]]$aes_params, 2)
   expect_identical(p_f$layers[[2]]$aes_params$family, "Arial")
 
   # Check that the expected font parameter is there after building the ggplot
