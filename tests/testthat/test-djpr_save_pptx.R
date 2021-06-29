@@ -19,8 +19,7 @@ check_slide <- function(basename, generate_slide) {
   lapply(slide_idxs, function(idx) {
     vdiffr::expect_doppelganger(
       paste(basename, idx, sep="-"),
-      pres_plots[[idx]],
-      path="" # manage_cases() app puts generated files in the root folder
+      pres_plots[[idx]]
     )
   })
 

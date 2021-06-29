@@ -59,7 +59,6 @@ pyramid <- djpr_colours %>%
 
 test_that("Colour pyramid is unchanged", {
   vdiffr::expect_doppelganger("pyramid",
-    pyramid,
-    path = ""
+    pyramid
   )
 })
