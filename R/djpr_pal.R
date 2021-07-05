@@ -7,6 +7,7 @@
 #' @param reverse Logical. FALSE by default. Setting to TRUE reverses the
 #'   standard colour order. Standard colour order runs from light to dark. If
 #'   you set reverse to TRUE, colours will run from dark to light.
+#' @param ... Arguments passed to `ggplot2::scale_*_manual()`
 #'
 #' @examples
 #' library(ggplot2)
@@ -153,12 +154,14 @@ regular_palette <- function(n) {
 
 #' @rdname palette
 #' @export
-djpr_colour_manual <- function(n) {
-  scale_colour_manual(values = djpr_pal(n = n))
+djpr_colour_manual <- function(n, reverse = FALSE, ...) {
+  scale_colour_manual(values = djpr_pal(n = n, reverse = reverse),
+                      ...)
 }
 
 #' @rdname palette
 #' @export
-djpr_fill_manual <- function(n) {
-  scale_fill_manual(values = djpr_pal(n = n))
+djpr_fill_manual <- function(n, reverse = FALSE, ...) {
+  scale_fill_manual(values = djpr_pal(n = n, reverse = reverse),
+                    ...)
 }
