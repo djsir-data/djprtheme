@@ -1,6 +1,7 @@
 # djprtheme 0.0.2.900
 * extract_labs() added
 * gg_font_change() added
+* remove_labs() added
 
 # djprtheme 0.0.2
 * get_plot_data() function added
