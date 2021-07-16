@@ -45,3 +45,27 @@ extract_labs <- function(plot,
     plot$labels[[lab_type]]
   }
 }
+
+#' Remove title, subtitle, and caption from a ggplot2 object
+#'
+#' @param plot A ggplot2 object
+#' @details If `plot` is a {patchwork} object, title, subtitle and caption
+#' will be removed from the combined plot, but not from the sub-plots.
+#' @export
+remove_labs <- function(plot) {
+
+  stopifnot(inherits(plot, "gg"))
+
+  if (inherits(plot, "patchwork")) {
+    for (lab_type in c("title", "subtitle", "caption")) {
+      plot$patches$annotation[[lab_type]] <- NULL
+    }
+
+  } else {
+    # plot$labels[[lab_type]]
+    for (lab_type in c("title", "subtitle", "caption")) {
+      plot$labels[[lab_type]] <- NULL
+    }
+  }
+  plot
+}
