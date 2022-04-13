@@ -17,5 +17,23 @@ djpr_use_fonts <- function() {
     bolditalic = system.file("fonts/VIC-BoldItalic.otf", package = pkgname)
   )
   showtext::showtext_auto()
+  utils::assignInMyNamespace("needs_showtext", T)
   options(djprtheme.base_font_family = "VIC-font")
+}
+
+needs_showtext <- F
+
+#' Run an expression with showtext turned off
+#'
+#' This is needed because showtext interferes with slide output.
+#' @export
+without_showtext <- function(expr) {
+  tryCatch({
+    showtext::showtext_auto(F)
+    expr
+  }, finally = {
+    if(needs_showtext) {
+      showtext::showtext_auto()
+    }
+  })
 }
