@@ -1,6 +1,6 @@
 Package: djprtheme
 Title: Create Graphs in the DJPR Style 
-Version: 0.0.2.903
+Version: 0.0.2.904
 Authors@R: 
     c(
     person(given = "Darren",
@@ -34,9 +34,11 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 Suggests: 
     covr,
+    showtext,
+    sysfonts,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Depends: 
@@ -50,4 +52,5 @@ Imports:
     rvg,
     rlang,
     patchwork,
-    scales
+    scales,
+    utils
