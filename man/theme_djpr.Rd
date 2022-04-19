@@ -6,7 +6,7 @@
 \usage{
 theme_djpr(
   base_size = 14,
-  base_family = "sans",
+  base_family = getOption("djprtheme.base_font_family", "sans"),
   chart_type = "normal",
   flipped = FALSE,
   background = "white",
