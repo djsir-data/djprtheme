@@ -6,6 +6,9 @@
 \usage{
 without_showtext(expr)
 }
+\arguments{
+\item{expr}{Expression to run.}
+}
 \description{
 This is needed because showtext interferes with slide output.
 }

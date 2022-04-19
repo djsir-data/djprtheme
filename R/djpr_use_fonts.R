@@ -26,6 +26,7 @@ needs_showtext <- F
 #' Run an expression with showtext turned off
 #'
 #' This is needed because showtext interferes with slide output.
+#' @param expr Expression to run.
 #' @export
 without_showtext <- function(expr) {
   tryCatch({
