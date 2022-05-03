@@ -66,87 +66,87 @@ djpr_pal <- function(n = 0, reverse = FALSE) {
 
 regular_palette <- function(n) {
   if (n == 1) {
-    palette <- djprtheme::djpr_royal_blue
+    palette <- djprtheme::djpr_blue
   } else if (n == 2) {
     palette <- c(
       djprtheme::djpr_green,
-      djprtheme::djpr_royal_blue
+      djprtheme::djpr_blue
     )
   } else if (n == 3) {
     palette <- c(
       djprtheme::djpr_green,
-      djprtheme::djpr_royal_blue,
+      djprtheme::djpr_faint_blue,
       djprtheme::djpr_blue
     )
   } else if (n == 4) {
     palette <- c(
       djprtheme::djpr_green,
-      djprtheme::djpr_bondi_blue,
-      djprtheme::djpr_royal_blue,
+      djprtheme::djpr_faint_blue,
+      djprtheme::djpr_purple,
       djprtheme::djpr_blue
     )
   } else if (n == 5) {
     palette <- c(
-      djprtheme::djpr_watercourse,
       djprtheme::djpr_green,
-      djprtheme::djpr_bondi_blue,
-      djprtheme::djpr_royal_blue,
+      djprtheme::djpr_faint_green,
+      djprtheme::djpr_faint_blue,
+      djprtheme::djpr_purple,
       djprtheme::djpr_blue
     )
   } else if (n == 6) {
     palette <- c(
-      djprtheme::djpr_watercourse,
-      djprtheme::djpr_green,
-      djprtheme::djpr_bondi_blue,
-      djprtheme::djpr_royal_blue,
-      djprtheme::djpr_blue,
-      djprtheme::djpr_cool_grey_11
-    )
-  } else if (n == 7) {
-    palette <- c(
-      djprtheme::djpr_watercourse,
-      djprtheme::djpr_green,
-      djprtheme::djpr_bondi_blue,
-      djprtheme::djpr_royal_blue,
-      djprtheme::djpr_blue,
-      djprtheme::djpr_cool_grey_11,
-      djprtheme::djpr_purple
-    )
-  } else if (n == 8) {
-    palette <- c(
-      djprtheme::djpr_watercourse,
-      djprtheme::djpr_green,
-      djprtheme::djpr_bondi_blue,
-      djprtheme::djpr_royal_blue,
-      djprtheme::djpr_cobalt,
-      djprtheme::djpr_blue,
-      djprtheme::djpr_cool_grey_11,
-      djprtheme::djpr_purple
-    )
-  } else if (n == 9) {
-    palette <- c(
-      djprtheme::djpr_watercourse,
-      djprtheme::djpr_green,
-      djprtheme::djpr_faint_green,
-      djprtheme::djpr_bondi_blue,
-      djprtheme::djpr_royal_blue,
-      djprtheme::djpr_cobalt,
-      djprtheme::djpr_blue,
-      djprtheme::djpr_cool_grey_11,
-      djprtheme::djpr_purple
-    )
-  } else if (n == 10) {
-    palette <- c(
-      djprtheme::djpr_watercourse,
       djprtheme::djpr_green,
       djprtheme::djpr_faint_green,
       djprtheme::djpr_faint_blue,
       djprtheme::djpr_bondi_blue,
+      djprtheme::djpr_purple,
+      djprtheme::djpr_blue
+    )
+  } else if (n == 7) {
+    palette <- c(
+      djprtheme::djpr_green,
+      djprtheme::djpr_faint_green,
+      djprtheme::djpr_faint_blue,
+      djprtheme::djpr_bondi_blue,
+      djprtheme::djpr_purple,
+      djprtheme::djpr_cool_grey_11,
+      djprtheme::djpr_blue
+    )
+  } else if (n == 8) {
+    palette <- c(
+      djprtheme::djpr_green,
+      djprtheme::djpr_faint_green,
+      djprtheme::djpr_faint_blue,
+      djprtheme::djpr_bondi_blue,
+      djprtheme::djpr_watercourse,
+      djprtheme::djpr_purple,
+      djprtheme::djpr_cool_grey_11,
+      djprtheme::djpr_blue
+    )
+  } else if (n == 9) {
+    palette <- c(
+      djprtheme::djpr_green,
+      djprtheme::djpr_faint_green,
+      djprtheme::djpr_faint_blue,
+      djprtheme::djpr_bondi_blue,
+      djprtheme::djpr_watercourse,
+      djprtheme::djpr_royal_blue,
+      djprtheme::djpr_purple,
+      djprtheme::djpr_cool_grey_11,
+      djprtheme::djpr_blue
+    )
+  } else if (n == 10) {
+    palette <- c(
+      djprtheme::djpr_green,
+      djprtheme::djpr_faint_green,
+      djprtheme::djpr_faint_blue,
+      djprtheme::djpr_bondi_blue,
+      djprtheme::djpr_watercourse,
       djprtheme::djpr_royal_blue,
       djprtheme::djpr_cobalt,
-      djprtheme::djpr_blue,
+      djprtheme::djpr_purple,
       djprtheme::djpr_cool_grey_11,
-      djprtheme::djpr_purple
+      djprtheme::djpr_blue
     )
   }
   palette
