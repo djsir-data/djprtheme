@@ -3,7 +3,7 @@
 \docType{data}
 \name{djpr_lima}
 \alias{djpr_lima}
-\title{Hex code for the colour: djpr lima}
+\title{Hex code for the colour: djpr lima (main colour)}
 \format{
 An object of class \code{character} of length 1.
 }

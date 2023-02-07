@@ -3,8 +3,7 @@
 \docType{data}
 \name{djpr_royal_blue}
 \alias{djpr_royal_blue}
-\title{Hex code for the colour: DJPR royal blue
-"#2A6FA2"}
+\title{Hex code for the colour: djpr royal blue (secondary colour)}
 \format{
 An object of class \code{character} of length 1.
 }
@@ -12,7 +11,6 @@ An object of class \code{character} of length 1.
 djpr_royal_blue
 }
 \description{
-Hex code for the colour: DJPR royal blue
-"#2A6FA2"
+"#13345E"
 }
 \keyword{datasets}

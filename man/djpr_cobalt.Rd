@@ -3,7 +3,7 @@
 \docType{data}
 \name{djpr_cobalt}
 \alias{djpr_cobalt}
-\title{Hex code for the colour: djpr cobalt}
+\title{Hex code for the colour: djpr cobalt (main colour)}
 \format{
 An object of class \code{character} of length 1.
 }
