@@ -110,7 +110,7 @@ regular_palette <- function(n) {
       djprtheme::djsir_bondi_blue,
       djprtheme::djsir_cool_grey_1,
       djprtheme::djsir_black_rock,
-      djprtheme::djpr_dark_tangerine
+      djprtheme::djsir_dark_tangerine
     )
   } else if (n == 8) {
     palette <- c(
@@ -120,8 +120,8 @@ regular_palette <- function(n) {
       djprtheme::djsir_bondi_blue,
       djprtheme::djsir_cool_grey_1,
       djprtheme::djsir_black_rock,
-      djprtheme::djpr_dark_tangerine,
-      djprtheme::djpr_green
+      djprtheme::djsir_dark_tangerine,
+      djprtheme::djsir_green
     )
   } else if (n == 9) {
     palette <- c(
@@ -131,9 +131,9 @@ regular_palette <- function(n) {
       djprtheme::djsir_bondi_blue,
       djprtheme::djsir_cool_grey_1,
       djprtheme::djsir_black_rock,
-      djprtheme::djpr_dark_tangerine,
-      djprtheme::djpr_green,
-      djprtheme::djpr_cool_grey_11
+      djprtheme::djsir_dark_tangerine,
+      djprtheme::djsir_green,
+      djprtheme::djsir_cool_grey_11
     )
   } else if (n == 10) {
     palette <- c(
@@ -143,10 +143,10 @@ regular_palette <- function(n) {
       djprtheme::djsir_bondi_blue,
       djprtheme::djsir_cool_grey_1,
       djprtheme::djsir_black_rock,
-      djprtheme::djpr_dark_tangerine,
-      djprtheme::djpr_green,
-      djprtheme::djpr_cool_grey_11,
-      djprtheme::djpr_persimmon
+      djprtheme::djsir_dark_tangerine,
+      djprtheme::djsir_green,
+      djprtheme::djsir_cool_grey_11,
+      djprtheme::djsir_persimmon
     )
   }
   palette
