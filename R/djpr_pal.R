@@ -99,7 +99,7 @@ regular_palette <- function(n) {
       djprtheme::djpr_lima,                                    #78BE20
       djprtheme::djpr_bondi_blue,                              #009CA6
       djprtheme::djpr_electric_lime,                           #CEDC00
-      djprtheme::djpr_cool_grey_1,                             #d9d9d6
+      djprtheme::djpr_dark_tangerine,                          #FF9E1B
       djprtheme::djpr_black_rock                               #343641
     )
   } else if (n == 7) {
