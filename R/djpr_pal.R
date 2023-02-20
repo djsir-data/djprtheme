@@ -76,29 +76,29 @@ regular_palette <- function(n) {
     palette <- c(
       djprtheme::djpr_cobalt,                                  #004C97
       djprtheme::djpr_lima,                                    #78BE20
-      djprtheme::djpr_electric_lime                            #CEDC00
+      djprtheme::djpr_bondi_blue                               #009CA6
     )
   } else if (n == 4) {
     palette <- c(
       djprtheme::djpr_cobalt,                                  #004C97
       djprtheme::djpr_lima,                                    #78BE20
-      djprtheme::djpr_electric_lime,                           #CEDC00
-      djprtheme::djpr_bondi_blue                               #009CA6
+      djprtheme::djpr_bondi_blue,                              #009CA6
+      djprtheme::djpr_electric_lime                            #CEDC00
     )
   } else if (n == 5) {
     palette <- c(
       djprtheme::djpr_cobalt,                                  #004C97
       djprtheme::djpr_lima,                                    #78BE20
-      djprtheme::djpr_electric_lime,                           #CEDC00
       djprtheme::djpr_bondi_blue,                              #009CA6
+      djprtheme::djpr_electric_lime,                           #CEDC00
       djprtheme::djpr_cool_grey_1                              #d9d9d6
     )
   } else if (n == 6) {
     palette <- c(
       djprtheme::djpr_cobalt,                                  #004C97
       djprtheme::djpr_lima,                                    #78BE20
-      djprtheme::djpr_electric_lime,                           #CEDC00
       djprtheme::djpr_bondi_blue,                              #009CA6
+      djprtheme::djpr_electric_lime,                           #CEDC00
       djprtheme::djpr_cool_grey_1,                             #d9d9d6
       djprtheme::djpr_black_rock                               #343641
     )
@@ -106,8 +106,8 @@ regular_palette <- function(n) {
     palette <- c(
       djprtheme::djpr_cobalt,                                  #004C97
       djprtheme::djpr_lima,                                    #78BE20
-      djprtheme::djpr_electric_lime,                           #CEDC00
       djprtheme::djpr_bondi_blue,                              #009CA6
+      djprtheme::djpr_electric_lime,                           #CEDC00
       djprtheme::djpr_cool_grey_1,                             #d9d9d6
       djprtheme::djpr_black_rock,                              #343641
       djprtheme::djpr_dark_tangerine                           #FF9E1B
@@ -116,8 +116,8 @@ regular_palette <- function(n) {
     palette <- c(
       djprtheme::djpr_cobalt,                                  #004C97
       djprtheme::djpr_lima,                                    #78BE20
-      djprtheme::djpr_electric_lime,                           #CEDC00
       djprtheme::djpr_bondi_blue,                              #009CA6
+      djprtheme::djpr_electric_lime,                           #CEDC00
       djprtheme::djpr_cool_grey_1,                             #d9d9d6
       djprtheme::djpr_black_rock,                              #343641
       djprtheme::djpr_dark_tangerine,                          #FF9E1B
@@ -127,8 +127,8 @@ regular_palette <- function(n) {
     palette <- c(
       djprtheme::djpr_cobalt,                                  #004C97
       djprtheme::djpr_lima,                                    #78BE20
-      djprtheme::djpr_electric_lime,                           #CEDC00
       djprtheme::djpr_bondi_blue,                              #009CA6
+      djprtheme::djpr_electric_lime,                           #CEDC00
       djprtheme::djpr_cool_grey_1,                             #d9d9d6
       djprtheme::djpr_black_rock,                              #343641
       djprtheme::djpr_dark_tangerine,                          #FF9E1B
@@ -139,8 +139,8 @@ regular_palette <- function(n) {
     palette <- c(
       djprtheme::djpr_cobalt,                                  #004C97
       djprtheme::djpr_lima,                                    #78BE20
-      djprtheme::djpr_electric_lime,                           #CEDC00
       djprtheme::djpr_bondi_blue,                              #009CA6
+      djprtheme::djpr_electric_lime,                           #CEDC00
       djprtheme::djpr_cool_grey_1,                             #d9d9d6
       djprtheme::djpr_black_rock,                              #343641
       djprtheme::djpr_dark_tangerine,                          #FF9E1B
