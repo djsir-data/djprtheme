@@ -66,87 +66,87 @@ djpr_pal <- function(n = 0, reverse = FALSE) {
 
 regular_palette <- function(n) {
   if (n == 1) {
-    palette <- djprtheme::djpr_cobalt
+    palette <- djprtheme::djpr_cobalt                          #004C97
   } else if (n == 2) {
     palette <- c(
-      djprtheme::djpr_cobalt,
-      djprtheme::djpr_lima
+      djprtheme::djpr_cobalt,                                  #004C97
+      djprtheme::djpr_lima                                     #78BE20
     )
   } else if (n == 3) {
     palette <- c(
-      djprtheme::djpr_cobalt,
-      djprtheme::djpr_lima,
-      djprtheme::djpr_electric_lime
+      djprtheme::djpr_cobalt,                                  #004C97
+      djprtheme::djpr_lima,                                    #78BE20
+      djprtheme::djpr_electric_lime                            #CEDC00
     )
   } else if (n == 4) {
     palette <- c(
-      djprtheme::djpr_cobalt,
-      djprtheme::djpr_lima,
-      djprtheme::djpr_electric_lime,
-      djprtheme::djpr_bondi_blue
+      djprtheme::djpr_cobalt,                                  #004C97
+      djprtheme::djpr_lima,                                    #78BE20
+      djprtheme::djpr_electric_lime,                           #CEDC00
+      djprtheme::djpr_bondi_blue                               #009CA6
     )
   } else if (n == 5) {
     palette <- c(
-      djprtheme::djpr_cobalt,
-      djprtheme::djpr_lima,
-      djprtheme::djpr_electric_lime,
-      djprtheme::djpr_bondi_blue,
-      djprtheme::djpr_cool_grey_1
+      djprtheme::djpr_cobalt,                                  #004C97
+      djprtheme::djpr_lima,                                    #78BE20
+      djprtheme::djpr_electric_lime,                           #CEDC00
+      djprtheme::djpr_bondi_blue,                              #009CA6
+      djprtheme::djpr_cool_grey_1                              #d9d9d6
     )
   } else if (n == 6) {
     palette <- c(
-      djprtheme::djpr_cobalt,
-      djprtheme::djpr_lima,
-      djprtheme::djpr_electric_lime,
-      djprtheme::djpr_bondi_blue,
-      djprtheme::djpr_cool_grey_1,
-      djprtheme::djpr_black_rock
+      djprtheme::djpr_cobalt,                                  #004C97
+      djprtheme::djpr_lima,                                    #78BE20
+      djprtheme::djpr_electric_lime,                           #CEDC00
+      djprtheme::djpr_bondi_blue,                              #009CA6
+      djprtheme::djpr_cool_grey_1,                             #d9d9d6
+      djprtheme::djpr_black_rock                               #343641
     )
   } else if (n == 7) {
     palette <- c(
-      djprtheme::djpr_cobalt,
-      djprtheme::djpr_lima,
-      djprtheme::djpr_electric_lime,
-      djprtheme::djpr_bondi_blue,
-      djprtheme::djpr_cool_grey_1,
-      djprtheme::djpr_black_rock,
-      djprtheme::djpr_dark_tangerine
+      djprtheme::djpr_cobalt,                                  #004C97
+      djprtheme::djpr_lima,                                    #78BE20
+      djprtheme::djpr_electric_lime,                           #CEDC00
+      djprtheme::djpr_bondi_blue,                              #009CA6
+      djprtheme::djpr_cool_grey_1,                             #d9d9d6
+      djprtheme::djpr_black_rock,                              #343641
+      djprtheme::djpr_dark_tangerine                           #FF9E1B
     )
   } else if (n == 8) {
     palette <- c(
-      djprtheme::djpr_cobalt,
-      djprtheme::djpr_lima,
-      djprtheme::djpr_electric_lime,
-      djprtheme::djpr_bondi_blue,
-      djprtheme::djpr_cool_grey_1,
-      djprtheme::djpr_black_rock,
-      djprtheme::djpr_dark_tangerine,
-      djprtheme::djpr_green
+      djprtheme::djpr_cobalt,                                  #004C97
+      djprtheme::djpr_lima,                                    #78BE20
+      djprtheme::djpr_electric_lime,                           #CEDC00
+      djprtheme::djpr_bondi_blue,                              #009CA6
+      djprtheme::djpr_cool_grey_1,                             #d9d9d6
+      djprtheme::djpr_black_rock,                              #343641
+      djprtheme::djpr_dark_tangerine,                          #FF9E1B
+      djprtheme::djpr_green                                    #69972C
     )
   } else if (n == 9) {
     palette <- c(
-      djprtheme::djpr_cobalt,
-      djprtheme::djpr_lima,
-      djprtheme::djpr_electric_lime,
-      djprtheme::djpr_bondi_blue,
-      djprtheme::djpr_cool_grey_1,
-      djprtheme::djpr_black_rock,
-      djprtheme::djpr_dark_tangerine,
-      djprtheme::djpr_green,
-      djprtheme::djpr_cool_grey_11
+      djprtheme::djpr_cobalt,                                  #004C97
+      djprtheme::djpr_lima,                                    #78BE20
+      djprtheme::djpr_electric_lime,                           #CEDC00
+      djprtheme::djpr_bondi_blue,                              #009CA6
+      djprtheme::djpr_cool_grey_1,                             #d9d9d6
+      djprtheme::djpr_black_rock,                              #343641
+      djprtheme::djpr_dark_tangerine,                          #FF9E1B
+      djprtheme::djpr_green,                                   #69972C
+      djprtheme::djpr_cool_grey_11                             #53565a
     )
   } else if (n == 10) {
     palette <- c(
-      djprtheme::djpr_cobalt,
-      djprtheme::djpr_lima,
-      djprtheme::djpr_electric_lime,
-      djprtheme::djpr_bondi_blue,
-      djprtheme::djpr_cool_grey_1,
-      djprtheme::djpr_black_rock,
-      djprtheme::djpr_dark_tangerine,
-      djprtheme::djpr_green,
-      djprtheme::djpr_cool_grey_11,
-      djprtheme::djpr_persimmon
+      djprtheme::djpr_cobalt,                                  #004C97
+      djprtheme::djpr_lima,                                    #78BE20
+      djprtheme::djpr_electric_lime,                           #CEDC00
+      djprtheme::djpr_bondi_blue,                              #009CA6
+      djprtheme::djpr_cool_grey_1,                             #d9d9d6
+      djprtheme::djpr_black_rock,                              #343641
+      djprtheme::djpr_dark_tangerine,                          #FF9E1B
+      djprtheme::djpr_green,                                   #69972C
+      djprtheme::djpr_cool_grey_11,                            #53565a
+      djprtheme::djpr_persimmon                                #E35205
     )
   }
   palette
