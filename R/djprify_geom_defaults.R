@@ -143,7 +143,7 @@ djprify_geom_defaults <- function() {
   update_geom_defaults(
     "boxplot",
     list(
-      fill = djprtheme::djpr_blue,
+      fill = djprtheme::djpr_royal_blue,
       col = djprtheme::djpr_royal_blue
     )
   )
