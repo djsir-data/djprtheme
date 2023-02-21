@@ -20,7 +20,6 @@ usethis::use_data(
   djpr_cobalt,
   djpr_cool_grey_1,
   djpr_electric_lime,
-  djpr_faint_green,
   djpr_black_rock,
   djpr_persimmon,
   djpr_dark_tangerine,
