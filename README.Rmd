@@ -18,26 +18,23 @@ knitr::opts_chunk$set(
 
 # djprtheme
 
-
 <!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![R-CMD-check](https://github.com/djpr-data/djprtheme/workflows/R-CMD-check/badge.svg)](https://github.com/djpr-data/djprtheme/actions)
-[![Codecov test coverage](https://codecov.io/gh/djpr-data/djprtheme/branch/main/graph/badge.svg)](https://codecov.io/gh/djpr-data/djprtheme?branch=main)
+
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental) [![R-CMD-check](https://github.com/djpr-data/djprtheme/workflows/R-CMD-check/badge.svg)](https://github.com/djpr-data/djprtheme/actions) [![Codecov test coverage](https://codecov.io/gh/djpr-data/djprtheme/branch/main/graph/badge.svg)](https://codecov.io/gh/djpr-data/djprtheme?branch=main)
+
 <!-- badges: end -->
 
 **This package is under active development**
 
-The goal of `djprtheme` is to enable users to easily create ggplot2 charts that
-look good and are consistent with the style guide of the Victorian Department of
-Jobs, Precincts and Regions.
+The goal of `djprtheme` is to enable users to easily create ggplot2 charts that look good and are consistent with the style guide of the Victorian Department of Jobs, Precincts and Regions.
 
 ## Installation
 
 You can install `djprtheme` from [GitHub](https://github.com/) with:
 
-``` {r eval = FALSE}
+```{r eval = FALSE}
 # install.packages("devtools")
-devtools::install_github("djpr-data/djprtheme")
+devtools::install_github("djsir-data/djprtheme")
 ```
 
 ## The DJPR palette
@@ -55,8 +52,8 @@ col_names <- c("djpr_cobalt",
           "djpr_persimmon",
           "djpr_dark_tangerine",
           "djpr_black_rock",
-          "djpr_cool_grey_1",
-          "djpr_cool_grey_11")
+          "djpr_cool_grey_11",
+          "djpr_cool_grey_1")
 
 cols <- c(djpr_cobalt,
           djpr_bondi_blue,
@@ -67,8 +64,8 @@ cols <- c(djpr_cobalt,
           djpr_persimmon,
           djpr_dark_tangerine,
           djpr_black_rock,
-          djpr_cool_grey_1,
-          djpr_cool_grey_11)
+          djpr_cool_grey_11,
+          djpr_cool_grey_1)
 
 df <- data.frame(col = cols,
                  name = col_names)
@@ -88,7 +85,6 @@ ggplot(df,
         legend.position = "none")
 
 ```
-
 
 You can style your plots with the DJPR palette using the `djpr_colour_manual()` and `djpr_fill_manual()` functions. You should specify the number of colours in your plot. These are the colours that will be used in your plot:
 
@@ -125,7 +121,6 @@ col_plot <- djpr_colours %>%
 
 col_plot
 ```
-
 
 The hex codes for those colours are:
 

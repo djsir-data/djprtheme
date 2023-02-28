@@ -10,6 +10,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![R-CMD-check](https://github.com/djpr-data/djprtheme/workflows/R-CMD-check/badge.svg)](https://github.com/djpr-data/djprtheme/actions)
 [![Codecov test
 coverage](https://codecov.io/gh/djpr-data/djprtheme/branch/main/graph/badge.svg)](https://codecov.io/gh/djpr-data/djprtheme?branch=main)
+
 <!-- badges: end -->
 
 **This package is under active development**
@@ -24,7 +25,7 @@ You can install `djprtheme` from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("djpr-data/djprtheme")
+devtools::install_github("djsir-data/djprtheme")
 ```
 
 ## The DJPR palette
