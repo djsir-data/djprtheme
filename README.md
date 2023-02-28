@@ -10,7 +10,8 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![R-CMD-check](https://github.com/djpr-data/djprtheme/workflows/R-CMD-check/badge.svg)](https://github.com/djpr-data/djprtheme/actions)
 [![Codecov test
 coverage](https://codecov.io/gh/djpr-data/djprtheme/branch/main/graph/badge.svg)](https://codecov.io/gh/djpr-data/djprtheme?branch=main)
-
+[![Lifecycle:
+superseded](https://img.shields.io/badge/lifecycle-superseded-blue.svg)](https://lifecycle.r-lib.org/articles/stages.html#superseded)
 <!-- badges: end -->
 
 **This package is under active development**
