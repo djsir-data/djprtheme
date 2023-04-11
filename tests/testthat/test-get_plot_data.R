@@ -14,7 +14,8 @@ describe("get_plot_data()", {
   })
 
   it("defaults to the last plot", {
-    qplot(Sepal.Width, Sepal.Length, data=iris)
+    ggplot(iris, aes(Sepal.Width, Sepal.Length)) +
+      geom_point()
     expect_equal(
       get_plot_data(),
       iris[, c("Sepal.Width", "Sepal.Length")]
@@ -77,7 +78,7 @@ describe("get_plot_data()", {
   })
 
   it("preserves row names", {
-    qplot(mpg, hp, data=mtcars) +
+    ggplot(mtcars, aes(mpg, hp)) +
       geom_point()
 
     expect_equal(

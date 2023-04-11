@@ -43,7 +43,7 @@ pyramid <- djpr_colours %>%
     y = order,
     fill = col
   )) +
-  geom_tile(col = "white", size = 1) +
+  geom_tile(col = "white", linewidth = 1) +
   scale_fill_manual(values = levels(djpr_colours$col)) +
   coord_flip(expand = FALSE, ylim = c(0, 13)) +
   theme_djpr() +

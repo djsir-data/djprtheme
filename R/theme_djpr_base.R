@@ -13,14 +13,14 @@ theme_djpr_base <- function(base_size = 12,
     theme(
       line = element_line(
         colour = djprtheme::djpr_cool_grey_1,
-        size = base_line_size,
+        linewidth = base_line_size,
         linetype = 1,
         lineend = "butt"
       ),
       rect = element_rect(
         fill = background,
         colour = djprtheme::djpr_cool_grey_1,
-        size = base_rect_size,
+        linewidth = base_rect_size,
         linetype = 0
       ),
       text = element_text(
@@ -36,7 +36,7 @@ theme_djpr_base <- function(base_size = 12,
         size = base_size
       ),
       axis.line = element_line(
-        size = points_to_mm(1),
+        linewidth = points_to_mm(1),
         colour = "black"
       ),
       axis.line.x = NULL,
@@ -202,7 +202,7 @@ theme_djpr_base <- function(base_size = 12,
     ret <- ret %+replace%
       theme(panel.border = element_rect(
         linetype = 1,
-        size = points_to_mm(2),
+        linewidth = points_to_mm(2),
         colour = "black",
         fill = NA
       ))
