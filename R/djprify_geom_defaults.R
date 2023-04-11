@@ -20,7 +20,7 @@ djprify_geom_defaults <- function() {
     list(
       colour = "white",
       fill = djprtheme::djpr_royal_blue,
-      size = 0.75 / .pt
+      linesize = 0.75 / .pt
     )
   )
   update_geom_defaults(
@@ -28,14 +28,14 @@ djprify_geom_defaults <- function() {
     list(
       colour = "white",
       fill = djprtheme::djpr_royal_blue,
-      size = 0.75 / .pt
+      linesize = 0.75 / .pt
     )
   )
   update_geom_defaults(
     "line",
     list(
       colour = djprtheme::djpr_royal_blue,
-      size = 3 / .pt
+      linesize = 3 / .pt
     )
   )
   update_geom_defaults(
@@ -57,7 +57,7 @@ djprify_geom_defaults <- function() {
     "path",
     list(
       colour = djprtheme::djpr_royal_blue,
-      size = 3 / .pt
+      linesize = 3 / .pt
     )
   )
 
@@ -143,7 +143,7 @@ djprify_geom_defaults <- function() {
   update_geom_defaults(
     "boxplot",
     list(
-      fill = djprtheme::djpr_blue,
+      fill = djprtheme::djpr_royal_blue,
       col = djprtheme::djpr_royal_blue
     )
   )

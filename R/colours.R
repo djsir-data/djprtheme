@@ -1,127 +1,70 @@
-#' Hex code for the colour: djpr blue (main colour)
-#'
-#' #1F1547
-#'
-"djpr_blue"
-
-#' Hex code for the colour: djpr green (main colour)
-#'
-#' #62BB46
-#'
-"djpr_green"
-
-
-#' Hex code for the colour: djpr cool grey 1
-#'
-#' #d9d9d6
-#'
-"djpr_cool_grey_1"
-
-#' Hex code for the colour: djpr cool grey 11
-#'
-#' #53565a
-#'
-"djpr_cool_grey_11"
-
-#' Hex code for the colour: djpr cobalt
+#' Hex code for the colour: djpr cobalt (main colour)
 #'
 #' #004C97
 #'
 "djpr_cobalt"
 
-#' Hex code for the colour: djpr navy blue
+#' Hex code for the colour: djpr bondi blue (main colour)
 #'
-#' #0072ce
-#'
-"djpr_navy_blue"
-
-#' Hex code for the colour: djpr pacific blue
-#'
-#' #0090da
-#'
-"djpr_pacific_blue"
-
-#' Hex code for the colour: djpr iris blue
-#'
-#' #00a9e0
-#'
-"djpr_iris_blue"
-
-#' Hex code for the colour: djpr malibu
-#'
-#' #71c5e8
-#'
-"djpr_malibu"
-
-#' Hex code for the colour: djpr bondi blue
-#'
-#' #1D9EC3
+#' #009CA6
 #'
 "djpr_bondi_blue"
 
-#' Hex code for the colour: djpr persian green
-#'
-#' #00b2a9
-#'
-"djpr_persian_green"
-
-#' Hex code for the colour: djpr spray
-#'
-#' #88dbdf
-#'
-"djpr_spray"
-
-#' Hex code for the colour: djpr watercourse
-#'
-#' #00573f
-#'
-"djpr_watercourse"
-
-#' Hex code for the colour: djpr watercourse 2
-#'
-#' #007b4b
-#'
-"djpr_watercourse_2"
-
-#' Hex code for the colour: DJPR purple
-#' "#745ECF"
-"djpr_purple"
-
-#' Hex code for the colour: DJPR faint green
-#' "#C0E4B5"
-"djpr_faint_green"
-
-#' Hex code for the colour: DJPR faint blue
-#' "#BCD3EF"
-"djpr_faint_blue"
-
-#' Hex code for the colour: DJPR royal blue
-#' "#2A6FA2"
-"djpr_royal_blue"
-
-#' Hex code for the colour: djpr dark pastel green
-#'
-#' #00b140
-#'
-"djpr_dark_pastel_green"
-
-#' Hex code for the colour: djpr lima
+#' Hex code for the colour: djpr lima (main colour)
 #'
 #' #78be20
 #'
 "djpr_lima"
 
-#' Hex code for the colour: djpr electric lime
+#' Hex code for the colour: djpr electric lime (main colour)
 #'
 #' #cedc00
 #'
 "djpr_electric_lime"
 
-#' Hex code for the colour: djpr golden yellow
+#' Hex code for the colour: djpr royal blue (secondary colour)
 #'
-#' #f3e500
+#' "#13345E"
 #'
-"djpr_golden_yellow"
+"djpr_royal_blue"
+
+#' Hex code for the colour: djpr green (secondary colour)
+#'
+#' #69972C
+#'
+"djpr_green"
+
+#' Hex code for the colour: djpr persimmon
+#'
+#' "#E35205"
+#'
+"djpr_persimmon"
+
+#' Hex code for the colour: djpr dark tangerine
+#'
+#' "#FF9E1B"
+#'
+"djpr_dark_tangerine"
+
+#' Hex code for the colour: djpr black rock
+#'
+#' #343641
+#'
+"djpr_black_rock"
+
+#' Hex code for the colour: djpr cool grey 11 (secondary colour)
+#'
+#' #53565a
+#'
+"djpr_cool_grey_11"
+
+#' Hex code for the colour: djpr cool grey 1 (secondary colour)
+#'
+#' #d9d9d6
+#'
+"djpr_cool_grey_1"
+
+
 
 #' A list of djpr colour sets
 #'

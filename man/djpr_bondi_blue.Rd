@@ -3,7 +3,7 @@
 \docType{data}
 \name{djpr_bondi_blue}
 \alias{djpr_bondi_blue}
-\title{Hex code for the colour: djpr bondi blue}
+\title{Hex code for the colour: djpr bondi blue (main colour)}
 \format{
 An object of class \code{character} of length 1.
 }
@@ -11,6 +11,6 @@ An object of class \code{character} of length 1.
 djpr_bondi_blue
 }
 \description{
-#1D9EC3
+#009CA6
 }
 \keyword{datasets}
