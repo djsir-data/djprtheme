@@ -25,19 +25,19 @@
   </clipPath>
 </defs>
 <g clip-path='url(#cpMC4wMHw2NDMuMTR8MTcuMzB8NTc2LjAw)'>
-<rect x='29.23' y='42.70' width='539.30' height='59.45' style='stroke-width: 1.07; stroke: #2A6FA2; stroke-linecap: square; stroke-linejoin: miter; fill: #F8766D;' />
-<rect x='29.23' y='112.40' width='584.68' height='22.39' style='stroke-width: 1.07; stroke: #2A6FA2; stroke-linecap: square; stroke-linejoin: miter; fill: #7CAE00;' />
-<rect x='29.23' y='533.79' width='584.68' height='16.82' style='stroke-width: 1.07; stroke: #2A6FA2; stroke-linecap: square; stroke-linejoin: miter; fill: #00BFC4;' />
-<rect x='427.85' y='144.63' width='186.01' height='379.32' style='stroke-width: 1.07; stroke: #2A6FA2; stroke-linecap: square; stroke-linejoin: miter; fill: #C77CFF;' />
+<rect x='29.23' y='42.70' width='539.30' height='59.45' style='stroke-width: 1.07; stroke: #13345E; stroke-linecap: butt; stroke-linejoin: miter; fill: #F8766D;' />
+<rect x='29.23' y='112.40' width='584.68' height='22.39' style='stroke-width: 1.07; stroke: #13345E; stroke-linecap: butt; stroke-linejoin: miter; fill: #7CAE00;' />
+<rect x='29.23' y='533.79' width='584.68' height='16.82' style='stroke-width: 1.07; stroke: #13345E; stroke-linecap: butt; stroke-linejoin: miter; fill: #00BFC4;' />
+<rect x='427.85' y='144.63' width='186.01' height='379.32' style='stroke-width: 1.07; stroke: #13345E; stroke-linecap: butt; stroke-linejoin: miter; fill: #C77CFF;' />
 <text x='298.88' y='78.62' text-anchor='middle' style='font-size: 18.00px; fill: #FFFF00; font-family: sans;' textLength='54.02px' lengthAdjust='spacingAndGlyphs'>mtcars</text>
 <text x='321.57' y='129.79' text-anchor='middle' style='font-size: 18.00px; fill: #FFFF00; font-family: sans;' textLength='146.10px' lengthAdjust='spacingAndGlyphs'>A chart about cars</text>
 <text x='321.57' y='548.39' text-anchor='middle' style='font-size: 18.00px; fill: #FFFF00; font-family: sans;' textLength='138.09px' lengthAdjust='spacingAndGlyphs'>R builtin datasets</text>
 </g>
 <g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA=)'>
-<rect x='649.52' y='265.54' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #2A6FA2; stroke-linecap: square; stroke-linejoin: miter; fill: #F8766D;' />
-<rect x='649.52' y='282.82' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #2A6FA2; stroke-linecap: square; stroke-linejoin: miter; fill: #7CAE00;' />
-<rect x='649.52' y='300.10' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #2A6FA2; stroke-linecap: square; stroke-linejoin: miter; fill: #00BFC4;' />
-<rect x='649.52' y='317.38' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #2A6FA2; stroke-linecap: square; stroke-linejoin: miter; fill: #C77CFF;' />
+<rect x='649.52' y='265.54' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #13345E; stroke-linecap: butt; stroke-linejoin: miter; fill: #F8766D;' />
+<rect x='649.52' y='282.82' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #13345E; stroke-linecap: butt; stroke-linejoin: miter; fill: #7CAE00;' />
+<rect x='649.52' y='300.10' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #13345E; stroke-linecap: butt; stroke-linejoin: miter; fill: #00BFC4;' />
+<rect x='649.52' y='317.38' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #13345E; stroke-linecap: butt; stroke-linejoin: miter; fill: #C77CFF;' />
 <text x='671.57' y='276.50' style='font-size: 8.80px; font-family: sans;' textLength='13.69px' lengthAdjust='spacingAndGlyphs'>title</text>
 <text x='671.57' y='293.78' style='font-size: 8.80px; font-family: sans;' textLength='27.88px' lengthAdjust='spacingAndGlyphs'>subtitle</text>
 <text x='671.57' y='311.06' style='font-size: 8.80px; font-family: sans;' textLength='28.38px' lengthAdjust='spacingAndGlyphs'>caption</text>

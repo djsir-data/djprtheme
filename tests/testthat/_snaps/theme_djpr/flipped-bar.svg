@@ -31,9 +31,9 @@
 <polyline points='273.67,539.71 273.67,26.72 ' style='stroke-width: 0.56; stroke: #D9D9D6; stroke-linecap: butt;' />
 <polyline points='451.69,539.71 451.69,26.72 ' style='stroke-width: 0.56; stroke: #D9D9D6; stroke-linecap: butt;' />
 <polyline points='629.70,539.71 629.70,26.72 ' style='stroke-width: 0.56; stroke: #D9D9D6; stroke-linecap: butt;' />
-<rect x='95.66' y='371.39' width='445.57' height='144.28' style='stroke-width: 0.56; stroke: #FFFFFF; stroke-linecap: square; stroke-linejoin: miter; fill: #2A6FA2;' />
-<rect x='95.66' y='211.07' width='528.35' height='144.28' style='stroke-width: 0.56; stroke: #FFFFFF; stroke-linecap: square; stroke-linejoin: miter; fill: #2A6FA2;' />
-<rect x='95.66' y='50.76' width='586.38' height='144.28' style='stroke-width: 0.56; stroke: #FFFFFF; stroke-linecap: square; stroke-linejoin: miter; fill: #2A6FA2;' />
+<rect x='95.66' y='371.39' width='445.57' height='144.28' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt; stroke-linejoin: miter; fill: #13345E;' />
+<rect x='95.66' y='211.07' width='528.35' height='144.28' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt; stroke-linejoin: miter; fill: #13345E;' />
+<rect x='95.66' y='50.76' width='586.38' height='144.28' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt; stroke-linejoin: miter; fill: #13345E;' />
 </g>
 <g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA=)'>
 <polyline points='66.34,539.71 66.34,26.72 ' style='stroke-width: 0.75; stroke-linecap: butt;' />
@@ -48,6 +48,6 @@
 <text x='451.69' y='555.63' text-anchor='middle' style='font-size: 14.00px; font-family: sans;' textLength='7.79px' lengthAdjust='spacingAndGlyphs'>4</text>
 <text x='629.70' y='555.63' text-anchor='middle' style='font-size: 14.00px; font-family: sans;' textLength='7.79px' lengthAdjust='spacingAndGlyphs'>6</text>
 <text x='388.85' y='571.65' text-anchor='middle' style='font-size: 14.00px; font-family: sans;' textLength='49.05px' lengthAdjust='spacingAndGlyphs'>sep_len</text>
-<text x='0.14' y='16.83' style='font-size: 14.00px; font-weight: bold; fill: #004676; font-family: sans;' textLength='69.27px' lengthAdjust='spacingAndGlyphs'>flipped_bar</text>
+<text x='0.14' y='16.83' style='font-size: 14.00px; font-weight: bold; fill: #004C97; font-family: sans;' textLength='69.27px' lengthAdjust='spacingAndGlyphs'>flipped_bar</text>
 </g>
 </svg>
